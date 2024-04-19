@@ -1,0 +1,44 @@
+
+
+.banner {
+    background-color: lightskyblue;
+    color: white;
+    padding: 10px;
+    height: 10%;
+}
+
+.sidebar {
+    background-color: darkblue;
+    color: white;
+    padding-top: 10px;
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: fixed;
+    transition: 0.5s;
+}
+
+.sidebar p {
+    padding: 8px, 8px, 8px, 32px;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidebar .closebutton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 36px;
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+
+#main-content {
+    transition: margin-left 0.5s;
+    padding: 10px;
+}
