@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto; //prevents horizontal scrolling
+}
+
+div#content {
+    display: grid;
+    outline: 1em;
+    outline-style: dashed;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+}
