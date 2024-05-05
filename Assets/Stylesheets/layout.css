@@ -6,8 +6,8 @@ body {
 
 div#content {
     display: grid;
-    outline: 1em;
-    outline-style: dashed;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    gap: 10px;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 100px;
 }
