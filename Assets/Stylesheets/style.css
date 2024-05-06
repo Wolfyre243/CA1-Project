@@ -49,17 +49,18 @@ img#logo:hover {
     display: flex;
 }
 
+div.caption-box {
+    display: flex;
+    width: 400px;
+    height: 200px;
+
+    background-color: gray;
+
+    padding: 20px;
+
+    margin: auto
 
 
-article {
-    grid-column: 2/span 4;
 }
 
-article#content-A {
-    grid-row: 2/span 1;
-    
-}
 
-article#content-B {
-    grid-row: 3/span 1;
-}
