@@ -13,6 +13,10 @@ div.parallax {
     background-size: cover;
 }
 
+div.parallax-buffer {
+    min-height: 20vh;
+}
+
 section#content {
 
     display: grid;

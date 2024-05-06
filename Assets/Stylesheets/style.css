@@ -2,6 +2,11 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    //margin: auto;
+    text-decoration: none;
+}
+
 header#sticky-banner {
     display: flex;
 
@@ -55,65 +60,127 @@ img#small-logo:hover {
 
 div#parallax-1 {
     
-    background-image: linear-gradient(-45deg, rgba(175,0,205,1) 0%, rgba(0,212,255,1) 100%);
-
+    background-image: url("https://c.files.bbci.co.uk/156EE/production/_113309778_gettyimages-524903696.jpg");
+    
     display: flex;
 
+}
+
+div.title-box {
+    
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    margin: auto;
+    padding: 20px;
+
+    background-color: tan;
+    opacity: .95;
+
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+
+    width: 130vh;
+    height: 70vh;
 }
 
 div#parallax-1 > ul {
     display: flex;
     position: absolute;
-    float: right;
+
+    right: 10px;
 
     list-style: none;
 
-    //width: 100%;
     margin-top: 10px;
     margin-left: auto;
     margin-right: 20px;
 }
 
-div#parallax-1 > img {
+div#parallax-1 > ul > li {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 100px;
+    height: 20px;
+
+    text-align: center;
+    vertical-align: center;
+    font-size: 20px;
+    
+    padding: 2px;
+    margin: 5px;
+
+    transition: all 0.5s;
+}
+
+div#parallax-1 > ul > li:hover {
+    width: 120px;
+    height: 30px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    background-color: rgb(255, 255, 255);
+}
+
+div.title-box > img {
+    display: block;
+    position: absolute;
+
     width: 200px;
     height: 200px;
 
-    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
-
-    margin: auto;
-    margin-right: 5px;
-    margin-left: 50px;
-
-    transition:
+    top: 15%;
+    left: auto;
+    
+    box-shadow: 0px 0px 10px rgb(255, 255, 255, 0.4);
+    
+    transition: 
         width 0.5s,
         height 0.5s,
-        margin 0.5s
-
+        box-shadow 0.5s;
 }
 
-div#parallax-1 > img:hover {
-    width: 300px;
-    height: 300px;
-    rotate: 360deg;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+div.title-box > img:hover {
+    width: 225px;
+    height: 225px;
 
+    box-shadow: 0px 0px 30px rgb(255, 255, 255, 1);
 }
 
-div#parallax-1 > h1 {
+div.divider {
+    display: flex;
+    position: relative;
 
-    color: white;
+    width: 600px;
+    margin: 0 auto;
 
-    max-width: 100px;
+    max-height: 5px; //changes line thickness
+    
+    //padding: 3px;
+    background-color: black;
+    
+}
+
+div.title-box > div.divider {
+
+    top: 60%;
+}
+
+div.title-box > h1 {
+    display: block;
+    position: absolute;
+    color: black;
+
+    //max-width: 100px;
 
     font-size: 75px;
     text-align: center;
-    font-family: Impact, sans-serif;
-    letter-spacing: 3px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
 
-    margin: auto;
-    margin-left: 50px;
+    bottom: 10%;
+    
 
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
     
 }
 
@@ -152,5 +219,7 @@ div.caption-box {
 
     margin: auto;
 }
+
+
 
 
