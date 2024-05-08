@@ -1,0 +1,111 @@
+/*  The contents of this stylesheet influences the elements in charge of
+    the parallax effect, as well as their children. */
+
+/* The following covers the style rules of the id=parallax-1 element. */
+div#parallax-1 {
+    
+    background-image: url("https://c.files.bbci.co.uk/156EE/production/_113309778_gettyimages-524903696.jpg");
+    
+    display: flex;
+
+}
+
+div#parallax-1 > div.title-box {
+    padding: 50px;
+
+    background-color: tan;
+    opacity: .95;
+
+    width: 65vw;
+    height: 60vh;
+}
+
+div#parallax-1 > ul {
+    display: flex;
+    position: absolute;
+
+    right: 10px;
+
+    list-style: none;
+
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+div#parallax-1 > ul > li {
+    background-color: antiquewhite;
+}
+
+div#parallax-1 > ul > li:hover {
+    background-color: white;
+}
+
+div#parallax-1 > div.title-box > img {
+    position: absolute;
+
+    width: 20vh;
+    height: 20vh;
+
+    top: 25vh;
+    left: auto;
+    
+    box-shadow: 0px 0px 30px rgb(255, 255, 255, 0.8);
+}
+
+div#parallax-1 > div.title-box > div.divider {
+    top: 30vh;
+    width: 40vw;
+
+    background-color: black;
+}
+
+div#parallax-1 > div.title-box > h1 {
+    display: block;
+    position: absolute;
+    color: black;
+
+    font-size: 5vw;
+    text-align: center;
+    letter-spacing: 1px;
+    bottom: 25vh;
+    
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
+}
+
+/*  The following style rules will be applied to id=parallax-2 element
+    and its children. */
+div#parallax-2 > div.title-box {
+    flex-direction: column;
+
+    width: 40vw;
+    height: 30vh;
+
+    padding: 20px;
+
+    background-color: gray;
+}
+
+div#parallax-2 > div.title-box > h1 {
+    color: black;
+
+    font-size: 5em;
+    text-align: center;
+    letter-spacing: 1px;
+
+    margin: auto;
+    
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
+}
+
+div#parallax-2 > div.title-box > p {
+    color: black;
+
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1px;
+
+    margin: auto;
+    
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
+}
