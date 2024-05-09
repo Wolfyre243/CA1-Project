@@ -70,3 +70,31 @@ div.divider {
     height: 5px; //changes line thickness
     margin: 0 auto;
 }
+
+/* The following styles influence the appearance of the blockquote element */
+blockquote {
+    position: relative;
+}
+
+blockquote > p::before {
+    position: absolute;
+    content: open-quote;
+    font-size: 4em;
+    margin-left: -0.6em;
+    margin-top: -0.4em;
+}
+
+blockquote > p::after {
+    position: absolute;
+    content: close-quote;
+    font-size: 4em;
+    right: 0;
+    margin-right: -0.4em;
+}
+
+blockquote > footer {
+    font-style: italic;
+    font-size: 4em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
