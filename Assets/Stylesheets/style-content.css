@@ -1,0 +1,45 @@
+/*  The contents of this file influences the style of
+    the main contents of the homepage and its children.
+
+    Contents:
+    1. Sticky banner style rules
+*/
+
+header#sticky-banner {
+    display: flex;
+
+    background-color: rgb(0, 28, 41);
+
+    position: sticky;
+    top: 0;
+}
+
+img#small-logo {
+    padding: 10px;
+
+    border-radius: 20px;
+
+    transition:
+        width 0.5s,
+        height 0.5s,
+        margin 0.5s,
+        rotate 0.5s,
+        border-radius 0.5s;
+}
+
+img#small-logo:hover {
+    width: 100px;
+    height: 100px;
+    rotate: 360deg;
+    border-radius: 20px;
+}
+
+header#sticky-banner > ul > li {
+    background-color: antiquewhite;
+}
+
+header#sticky-banner > ul > li:hover {
+    background-color: white;
+}
+
+

@@ -3,11 +3,9 @@
 
 /* The following covers the style rules of the id=parallax-1 element. */
 div#parallax-1 {
-    
     background-image: url("https://c.files.bbci.co.uk/156EE/production/_113309778_gettyimages-524903696.jpg");
     
     display: flex;
-
 }
 
 div#parallax-1 > div.title-box {
@@ -34,6 +32,7 @@ div#parallax-1 > ul {
 }
 
 div#parallax-1 > ul > li {
+    animation: slide-in-left 1s ease-out;
     background-color: antiquewhite;
 }
 
@@ -43,19 +42,28 @@ div#parallax-1 > ul > li:hover {
 
 div#parallax-1 > div.title-box > img {
     position: absolute;
+    top: 25vh;
+    left: auto;
 
     width: 20vh;
     height: 20vh;
 
-    top: 25vh;
-    left: auto;
-    
     box-shadow: 0px 0px 30px rgb(255, 255, 255, 0.8);
+
+    animation: fly-in-top 1s ease-out 0.1s;
+
+    transition: all 0.3s ease-in-out;
+}
+
+div#parallax-1 > div.title-box > img:hover {
+    transform: rotate3d(0.5,1,0,-30deg);
 }
 
 div#parallax-1 > div.title-box > div.divider {
     top: 30vh;
     width: 40vw;
+
+    animation: spread-reveal 1s linear;
 
     background-color: black;
 }
@@ -69,6 +77,8 @@ div#parallax-1 > div.title-box > h1 {
     text-align: center;
     letter-spacing: 1px;
     bottom: 25vh;
+
+    animation: fly-in-bottom 1s ease-out 0.1s;
     
     text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
 }
@@ -108,4 +118,13 @@ div#parallax-2 > div.title-box > p {
     margin: auto;
     
     text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
+}
+
+div#parallax-3 {
+    display: flex;
+    background-attachment: scroll;
+
+    min-height: 310vh;
+
+    background-image: linear-gradient(170deg, rgba(42,15,84,1) 6%, rgba(0,28,41,1) 79%);
 }
