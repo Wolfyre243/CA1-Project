@@ -3,7 +3,7 @@
 
 /* The following covers the style rules of the id=parallax-1 element. */
 div#parallax-1 {
-    background-image: url("https://c.files.bbci.co.uk/156EE/production/_113309778_gettyimages-524903696.jpg");
+    background-image: url(/Assets/Images/hungry-hands.jpg); /* Image credit: iStock by Getty Images at: https://www.istockphoto.com/photo/poor-indian-children-asking-for-food-india-gm524903696-92295869 */
     
     display: flex;
 }
@@ -85,13 +85,23 @@ div#parallax-1 > div.title-box > h1 {
 
 /*  The following style rules will be applied to id=parallax-2 element
     and its children. */
+div#parallax-2 {
+    display: flex;
+    
+    background: linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(176,166,192,0.3) 70%, rgba(42,15,84,1) 100%) no-repeat,
+                url(/Assets/Images/children-asking-for-food.avif) no-repeat; /* Image credit: independent.co.uk via Getty at: "https://www.independent.co.uk/news/world/the-20-countries-where-more-than-1-in-4-people-go-hungry-a47886.html"  */
+    
+    background-size: cover;
+    
+}
+
 div#parallax-2 > div.title-box {
     flex-direction: column;
 
     width: 40vw;
     height: 30vh;
 
-    padding: 20px;
+    padding: 5%;
 
     background-color: gray;
 }
@@ -104,6 +114,7 @@ div#parallax-2 > div.title-box > h1 {
     letter-spacing: 1px;
 
     margin: auto;
+    margin-top: -5%;
     
     text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
 }
@@ -113,9 +124,9 @@ div#parallax-2 > div.title-box > p {
 
     font-size: 2em;
     text-align: center;
-    letter-spacing: 1px;
 
     margin: auto;
+    margin-top: -10%;
     
     text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
 }
@@ -124,7 +135,7 @@ div#parallax-3 {
     display: flex;
     background-attachment: scroll;
 
-    min-height: 310vh;
+    min-height: 210vh;
 
-    background-image: linear-gradient(170deg, rgba(42,15,84,1) 6%, rgba(0,28,41,1) 79%);
+    background-image: linear-gradient(170deg, rgba(42,15,84,1) 0%, rgba(0,28,41,1) 79%);
 }
