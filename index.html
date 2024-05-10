@@ -9,20 +9,22 @@
     <!--Links to the various css stylesheets-->
     <link rel="stylesheet" href="./Assets/Stylesheets/style.css">
     <link rel="stylesheet" href="./Assets/Stylesheets/style-parallax.css">
+    <link rel="stylesheet" href="./Assets/Stylesheets/style-content.css">
     <link rel="stylesheet" href="./Assets/Stylesheets/layout.css">
     <link rel="stylesheet" href="./Assets/Stylesheets/reset.css">
-    <link rel="stylesheet" href="./Assets/Stylesheets/style-content.css">
     <link rel="stylesheet" href="./Assets/Stylesheets/animations.css">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     
 </head>
 <body>
-
     <section id="parallax-scrolling">
         <div class="parallax" id="parallax-1">
             <ul>
                 <li class="small-list-button"><a href="">Home</a></li>
-                <li class="small-list-button"><a href="">About Me</a></li>
-                <li class="small-list-button"><a href="">My Pledge</a></li>
+                <li class="small-list-button"><a href="./Webpages/about-me.html">About Me</a></li>
+                <li class="small-list-button"><a href="./Webpages/my-pledge.html">My Pledge</a></li>
             </ul>
             <div class="title-box">
                 <img id="large-logo" src="https://www.singstat.gov.sg/-/media/images/find-data/sdg/goal-2/theglobalgoals_icons_color_goal_2.ashx" alt="A logo of the UN SDGs">
@@ -43,25 +45,30 @@
 
         <div class="parallax" id="parallax-3">
             <blockquote>
-                <p>this is a very nice quote yby the skibidi sigma this is a very nice quote yby the skibidi sigmathis is a very nice quote yby the skibidi sigmathis is a very nice quote yby the skibidi sigmathis is a very nice quote yby the skibidi sigmathis is a very nice quote yby the skibidi sigma</p>
-                <footer>this is the credit</footer>
+                <h1>If you cannot feed a hundred people, then feed just one.</h1>
+                <footer>- Mother Teresa</footer>
             </blockquote>
+            <div class="scroll-prompt">
+                <h1>World hunger is <strong>escalating</strong> at an alarming rate.</h1>
+                <p>Let's learn more about world hunger:</p>
+                <img class="down-arrow" src="./Assets/Images/down-arrow.png" alt="Double arrows pointing downwards"> <!--Arrow icons created by th studio - Flaticon-->
+            </div>
         </div>
     </section>
 
+    <!--Start of main content-->
     <header id="sticky-banner">
 
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            <img id="small-logo" src="https://www.singstat.gov.sg/-/media/images/find-data/sdg/goal-2/theglobalgoals_icons_color_goal_2.ashx" alt="logo of the 2nd SDG, Zero Hunger" width="75" height="75" title="Click me!">
+        <a href="https://www.un.org/sustainabledevelopment/hunger/" target="_blank">
+            <img id="small-logo" src="https://www.singstat.gov.sg/-/media/images/find-data/sdg/goal-2/theglobalgoals_icons_color_goal_2.ashx" alt="logo of the 2nd SDG, Zero Hunger" width="75" height="75" title="Official UN Website">
         </a>
-
 
         <h1 class="banner-text">The 17 SDGs: Acheiving Zero Hunger</h1>
             
         <ul class="navbar">
-            <li class="small-list-button"><a href="#">Home</a></li>
-            <li class="small-list-button"><a href="#">About Me</a></li>
-            <li class="small-list-button"><a href="#">My Pledge</a></li>
+            <li class="small-list-button"><a href="./index.html">Home</a></li>
+            <li class="small-list-button"><a href="./Webpages/about-me.html">About Me</a></li>
+            <li class="small-list-button"><a href="./Webpages/my-pledge.html">My Pledge</a></li>
         </ul>
         
     </header> 

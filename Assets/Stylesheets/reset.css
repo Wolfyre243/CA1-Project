@@ -5,7 +5,7 @@
 }
 
 a {
-    font-size: 1.6rem;
+    font-size: 1.6rem; 
 
     color: inherit;
     text-align: inherit;
@@ -22,4 +22,8 @@ p {
 
 article {
     font-size: 2rem;
+}
+
+strong {
+    font-weight: 1000;
 }

@@ -1,6 +1,8 @@
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 62.5%; //Sets the stage for use of root em 
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 62.5%; //Sets the stage for use of root em
+    //10px = 0.625rem
+    //x rem = x times the font-size of html element.
 }
 
 body {

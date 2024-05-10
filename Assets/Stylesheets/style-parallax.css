@@ -3,9 +3,8 @@
 
 /* The following covers the style rules of the id=parallax-1 element. */
 div#parallax-1 {
-    background-image: url(/Assets/Images/hungry-hands.jpg); /* Image credit: iStock by Getty Images at: https://www.istockphoto.com/photo/poor-indian-children-asking-for-food-india-gm524903696-92295869 */
-    
     display: flex;
+    background-image: url(/Assets/Images/hungry-hands.jpg); /* Image credit: iStock by Getty Images at: https://www.istockphoto.com/photo/poor-indian-children-asking-for-food-india-gm524903696-92295869 */   
 }
 
 div#parallax-1 > div.title-box {
@@ -136,6 +135,9 @@ div#parallax-3 {
     flex-direction: column;
     background-attachment: scroll;
 
+    margin: auto;
+    justify-content: center;
+
     min-height: 210vh;
 
     background-image: linear-gradient(170deg, rgba(42,15,84,1) 0%, rgba(0,28,41,1) 79%);
@@ -149,13 +151,58 @@ div#parallax-3 > blockquote {
     height: 40vh;
 
     color: white;
+    font-family: "Bebas Neue";
 
     margin: auto;
-    margin-top: 15%;
+    margin-top: 10%;
+    margin-bottom: 1em;
 }
 
-div#parallax-3 > blockquote > p {
-    font-size: 5vh;
+div#parallax-3 > blockquote > h1 {
+    font-size: 10vh;
+    letter-spacing: 2px;
+    text-align: center;
 
-    text-align: left;
+    background-image: url(/Assets/Images/smiling-child-with-food.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 30%, 0%;
+}
+
+div#parallax-3 > blockquote > footer {
+    font-style: italic;
+    font-size: 4em;
+    margin-top: 30px;
+}
+
+div#parallax-3 > div.scroll-prompt {
+    color: white;
+
+    margin: auto;
+    margin-top: 3em;
+}
+
+div#parallax-3 > div.scroll-prompt > h1 > strong {
+    color: red;
+    animation: zoom-text 10s ease infinite;
+}
+
+div#parallax-3 > div.scroll-prompt > p {
+    margin: auto;
+    margin-top: 2em;
+    font-size: 2.4rem;
+    
+}
+
+div#parallax-3 > div > img.down-arrow {
+    width: 50px;
+    height: 50px;
+
+    margin: auto;
+    margin-top: 2em;
+
+    animation: floating-element 1s ease-in-out infinite;
 }
