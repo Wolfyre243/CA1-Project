@@ -77,3 +77,12 @@
         box-shadow: 0px 0px 80px rgba(107, 44, 255, 0.8);
     }
 }
+
+@keyframes expanding-shadow {
+    from, to {
+        box-shadow: 0px 0px 40px rgb(190, 190, 190, 0.5);
+    }
+    50% {
+        box-shadow: 0px 0px 80px rgb(190, 190, 190, 0.8);
+    }
+}
