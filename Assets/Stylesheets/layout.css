@@ -1,28 +1,39 @@
 html {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 62.5%; //Sets the stage for use of root em
-    //10px = 0.625rem
-    //x rem = x times the font-size of html element.
+    font-size: 62.5%; /* Sets the stage for use of root em */
+    /* 10px = 0.625rem */
+    /* x rem = x times the font-size of html element. */
 }
 
 body {
     margin: 0;
     padding: 0;
-    overflow: auto; //prevents horizontal scrolling
+    overflow: auto; /* prevents horizontal scrolling */
 }
 
 div.parallax {
     min-height: 100vh;
 
     background-repeat: no-repeat;
-    background-attachment: fixed; //Important to ensure parallax effect is created
+    background-attachment: fixed; /* Important to ensure parallax effect is created */
     background-position: center;
-    background-size: cover; //Covers entire container
+    background-size: cover; /* Covers entire container */
 }
 
 div.parallax-buffer {
     background-color: antiquewhite;
     min-height: 10vh;
+}
+
+/* Below are style rules that will affect the scroll-snap property of section elements */
+section.snap-scroll-section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
 }
 
 /* Creates a grid layout for content */
