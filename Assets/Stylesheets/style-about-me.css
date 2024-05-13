@@ -11,7 +11,7 @@ html, body, div.carousell-layout, section {
 }
 
 html {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -138,9 +138,12 @@ section#content-section > h1 {
 }
 
 section#content-section > div.carousell-layout {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid: 1fr / 175px 1fr 1fr 1fr 1fr 1fr 175px;
+    gap: 20%;
     margin: auto;
+    padding-right: 50px;
+    padding-left: 50px;
     width: 80vw;
     height: 60vh;
 
@@ -149,15 +152,12 @@ section#content-section > div.carousell-layout {
 }
 
 div.carousell-layout > section {
-    display: flex;
     justify-content: center;
     scroll-snap-align: center;
     scroll-snap-stop: always;
 
-    height: 100vw;
-    width: 100vh;
-
-    margin: auto;
+    width: 350px;
+    height: 350px;
     
     background-color: antiquewhite;
 }
