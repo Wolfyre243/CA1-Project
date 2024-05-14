@@ -3,6 +3,7 @@
 
     Contents:
     1. Sticky banner style rules
+    2. Style rules for content sections and its children
 */
 
 header#sticky-banner {
@@ -42,4 +43,18 @@ header#sticky-banner > ul > li:hover {
     background-color: white;
 }
 
+div.content-section-banner > h1 {
+    font-family: 'Bebas Neue';
+    font-size: 9rem;
+    letter-spacing: 0.5rem;
+    margin: auto;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+}
+
+section#content-1 > div {
+    background-image: url(/Assets/Images/hungry-children-lined-up.jpeg); /* Credit to CNBC at https://www.cnbc.com/2021/07/09/oxfam-war-covid-and-climate-change-fuel-hunger-crisis-killing-11-every-minute.html, from Getty Images */
+    background-size: cover;
+    background-position: top -20vh center;
+    background-attachment: fixed;
+}
 
