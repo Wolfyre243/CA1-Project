@@ -13,6 +13,8 @@ header#sticky-banner {
 
     position: sticky;
     top: 0;
+
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.6);
 }
 
 img#small-logo {
@@ -51,10 +53,15 @@ div.content-section-banner > h1 {
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
 }
 
-section#content-1 > div {
+/* Style the content banner */
+section#content-1 > div.content-section-banner {
     background-image: url(/Assets/Images/hungry-children-lined-up.jpeg); /* Credit to CNBC at https://www.cnbc.com/2021/07/09/oxfam-war-covid-and-climate-change-fuel-hunger-crisis-killing-11-every-minute.html, from Getty Images */
     background-size: cover;
     background-position: top -20vh center;
     background-attachment: fixed;
 }
+
+
+
+
 

@@ -21,10 +21,6 @@ div.title-box {
 
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
 }
-/* Creates a simple reusable box style rule */
-div.box {
-    display: flex;
-}
 
 div.scroll-prompt {
     display: flex;
@@ -72,6 +68,8 @@ li.small-list-button:hover {
     margin-right: 10px;
     box-shadow: 0px 0px 40px rgba(0,0,0,0.8);
     border: 2px solid rgba(0,0,0,0.8);
+
+    animation: expanding-shadow 2s ease-in-out infinite;
 }
 
 li.small-list-button > a {
@@ -112,6 +110,15 @@ blockquote > h1::after {
     font-size: 2em;
     right: 0;
     margin-right: -0.2em;
+}
+
+/* A reusable format for a elements that require a logo:name format */
+a.logo-name-link {
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    align-items: center;
+    justify-content: center;
 }
 
 

@@ -1,8 +1,11 @@
+/* This stylesheet is created to style the layout, which may be used and adapted across the multiple webpages */
+
 html {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 62.5%; /* Sets the stage for use of root em */
+    font-size: 62.5%; /* Sets the stage for use of root em, in order to keep font sizes constant across devices */
     /* 10px = 0.625rem */
     /* x rem = x times the font-size of html element. */
+    scrollbar-width: none; /* Removes the scrollbar */
 }
 
 body {
@@ -26,6 +29,7 @@ div.parallax-buffer {
 }
 
 /* Below are style rules that will affect the scroll-snap property of section elements */
+/* Used in about-me and pledge webpages */
 section.snap-scroll-section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -40,7 +44,8 @@ section.snap-scroll-section {
 section.grid-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0px 40vh 1fr 1fr 1fr;
+    grid-template-rows: 0px 40vh 1fr 1fr 1fr; 
+    /* Layout: buffer, banner, text, text, text */
 }
 
 div.content-section-banner {
@@ -56,18 +61,12 @@ div.content-section-banner {
     vertical-align: middle;
 }
 
-article {
-    grid-column: 1/-1;
+section.grid-content > p {
+    grid-column: 1 / -1;
+    grid-row: 3 / span 1;
     justify-content: center;
 
+    font: 20px Tahoma, Arial, Helvetica;
     padding: 20px;
 }
 
-article#content-A {
-    grid-row: 3/span 1;
-    
-}
-
-article#content-B {
-    grid-row: 4/span 1;
-}
