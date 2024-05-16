@@ -1,7 +1,7 @@
 /* This stylsheet stores the default values for all elements */
 * {
-    margin: 0; //creates a fallback for margin and padding in case of browser incompatibility
-    padding: 0;
+    margin: 0px; /* creates a fallback for margin and padding in case of browser incompatibility */
+    padding: 0px;
 }
 
 a {

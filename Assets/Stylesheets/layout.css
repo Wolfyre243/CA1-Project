@@ -1,8 +1,17 @@
 /* This stylesheet is created to style the layout, which may be used and adapted across the multiple webpages */
 
+/*
+    Contents:
+    1. Parallax layouts for the index.html page.
+    2. Sticky banner layout for both index.html and pledge.html, covering the navigation buttons and the title
+    3. Snap scroll layout for about-me.html and pledge.html pages
+    4. Grid layout for content sections in index.html and pledge.html
+
+*/
 html {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 62.5%; /* Sets the stage for use of root em, in order to keep font sizes constant across devices */
+    font-size: 62.5%; 
+    /* Sets the stage for use of root em, in order to keep font sizes constant across devices */
     /* 10px = 0.625rem */
     /* x rem = x times the font-size of html element. */
     scrollbar-width: none; /* Removes the scrollbar */
@@ -14,8 +23,12 @@ body {
     overflow: auto; /* prevents horizontal scrolling */
 }
 
+/* 
+    1. Styles below are for Parallax Layouts, where the background image is fixed.
+    Contains the main parallax style for backgrounds and the buffer
+*/
 div.parallax {
-    min-height: 100vh;
+    min-height: 100vh; /* full page size */
 
     background-repeat: no-repeat;
     background-attachment: fixed; /* Important to ensure parallax effect is created */
@@ -26,6 +39,43 @@ div.parallax {
 div.parallax-buffer {
     background-color: antiquewhite;
     min-height: 10vh;
+}
+
+/* 
+    2. Styles below are for the Sticky Banner at the top in part 2 of the index.html webpage.
+    Contains the style rules affecting the banner itself, as well as the small SDG logo inside it.
+*/
+header#sticky-banner {
+    display: flex;
+    position: sticky; /* important to ensure banner stays on the top of the page. */
+    top: 0;
+
+    background-color: rgb(0, 28, 41);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.349);
+}
+
+header#sticky-banner img#small-logo {
+    padding: 10px;
+
+    border-radius: 20px;
+
+    transition: all 0.5s;
+}
+
+/* Animate the logo to rotate and expand on hover */
+header#sticky-banner img#small-logo:hover {
+    width: 100px;
+    height: 100px;
+    rotate: 360deg;
+    border-radius: 20px;
+}
+
+header#sticky-banner > ul > li {
+    background-color: antiquewhite;
+}
+
+header#sticky-banner > ul > li:hover {
+    background-color: white;
 }
 
 /* Below are style rules that will affect the scroll-snap property of section elements */
