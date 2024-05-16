@@ -70,3 +70,20 @@ section.grid-content > p {
     padding: 20px;
 }
 
+section.grid-content > p > a {
+    text-decoration: underline dotted 2px;
+    font: inherit;
+}
+
+/* Creates a figure that holds an image and a caption. Position is adjusted in respective css files. */
+figure.inline-image {
+    align-self: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+figure.inline-image > figcaption {
+    font: 15px "Times New Roman", arial, helvetica;
+    font-style: italic;
+}
+

@@ -61,6 +61,33 @@ section#content-1 > div.content-section-banner {
     background-attachment: fixed;
 }
 
+section#content-1 > p#cont-1-p-A {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 4;
+}
+
+section#content-1 > figure.inline-image {
+    grid-row: 3 / span 1;
+    grid-column: 5 / span 2;
+
+    align-self: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+figure.inline-image img {
+    width: 20vw;
+    height: 35vh;
+}
+
+section#content-2 > div.content-section-banner {
+    background-image: url(/Assets/Images/starving-pair.webp); /* Credit to Concern US at https://concernusa.org/news/causes-of-world-hunger/ */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
 
 
 
