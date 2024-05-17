@@ -4,23 +4,11 @@ html, body, section {
     height: 100%;
 }
 
-div#scroll-snap-container {
-    /* Allows for scroll snapping; proximity causes the scroll to 
-    snap less stricly and allows for more scrolling space */
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    scroll-snap-type: y proximity; 
-
-    scrollbar-width: none; /* hides the scrollbar */
-}
-
-div#scroll-snap-container > section {
+div.scroll-snap-container > section {
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    
 }
 
 section#intro-section {

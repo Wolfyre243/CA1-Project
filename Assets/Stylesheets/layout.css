@@ -1,5 +1,6 @@
-/* This stylesheet is created to style the layout, which may be used and adapted across the multiple webpages */
-
+/* 
+This stylesheet is created to style the layout, which may be used and adapted across the multiple webpages
+The elements styled here are major components that contribute greatly to the overall structure and flow of the three webpages.
 /*
     Contents:
     1. Parallax layouts for the index.html page.
@@ -20,7 +21,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    overflow: auto; /* prevents horizontal scrolling */
+     /* prevents horizontal scrolling */
 }
 
 /* 
@@ -37,8 +38,8 @@ div.parallax {
 }
 
 div.parallax-buffer {
-    background-color: #F7F5F4;
-    min-height: 10vh;
+    background-color: #2A2934;
+    min-height: 5vh;
 }
 
 /* 
@@ -80,11 +81,25 @@ header#sticky-banner > ul > li:hover {
 
 /* Below are style rules that will affect the scroll-snap property of section elements */
 /* Used in about-me and pledge webpages */
+
+/* Creates a container to store scroll-snap sections */
+div.scroll-snap-container {
+    /* Allows for scroll snapping; proximity causes the scroll to 
+    snap less stricly and allows for more scrolling space */
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: y proximity; 
+
+    scrollbar-width: none; /* hides the scrollbar */
+}
+
 section.snap-scroll-section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
 
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 
     display: flex;
     justify-content: center;
@@ -94,8 +109,8 @@ section.snap-scroll-section {
 section.grid-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0px 40vh 1fr 1fr 1fr; 
-    /* Layout: buffer, banner, text, text, text */
+    grid-template-rows: 0px 40vh auto auto auto 100px;
+    /* Layout: buffer, banner, text, text, text buffer */
 }
 
 div.content-section-banner {

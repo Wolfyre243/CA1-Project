@@ -127,12 +127,42 @@ a.logo-name-link {
     justify-content: center;
 }
 
-div.popout-card {
+/*
+    Creates a card with the format image : description
+    By default the image is placed on the left of the card, visibly popping out
+*/
+div.image-desc-card {
     display: flex;
-    flex-direction: column;
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-div.popout-card > img {
-    margin-left: -100px;
-    margin-top: -100px;
+/* A secondary component to the image-desc-card, which encases the image and its corresponding popout tag */
+div.hover-popout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: fit-content;
+
+    transition: all 0.2s ease-in-out;
+}
+
+div.hover-popout-container > p {
+    width: fit-content;
+    opacity: 0;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+div.hover-popout-container:hover > p {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+div.hover-popout-container:hover {
+    transform: scale(1.1, 1.1);
 }

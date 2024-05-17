@@ -18,7 +18,7 @@ div#parallax-1 > ul {
 
     list-style: none;
 
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: auto;
     right: 20px;
 }
@@ -78,7 +78,7 @@ div#parallax-1 > div.title-box > h1 {
 div#parallax-2 {
     display: flex;
     
-    background: linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(176,166,192,0.3) 70%, rgba(42,15,84,1) 100%) scroll no-repeat,
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.3) 0%, rgba(42, 39, 46, 0.4) 70%, rgba(42,15,84,1) 100%) scroll no-repeat,
                 url(/Assets/Images/children-asking-for-food.avif) fixed no-repeat; /* Image credit: independent.co.uk via Getty at: "https://www.independent.co.uk/news/world/the-20-countries-where-more-than-1-in-4-people-go-hungry-a47886.html"  */
     
     background-size: cover;
@@ -91,6 +91,7 @@ div#parallax-2 > div.title-box {
     height: 35vh;
 
     padding: 5%;
+    border-radius: 20px;
 
     background-color: gray;
 }
@@ -128,7 +129,7 @@ div#parallax-3 {
     margin: auto;
     justify-content: center;
 
-    min-height: 210vh;
+    height: 215vh;
 
     background-image: linear-gradient(170deg, rgba(42,15,84,1) 0%, rgba(0,28,41,1) 79%);
 }
@@ -184,7 +185,6 @@ div#parallax-3 > div.scroll-prompt > p {
     margin: auto;
     margin-top: 2em;
     font-size: 2.4rem;
-    
 }
 
 div#parallax-3 > div > img.down-arrow {
