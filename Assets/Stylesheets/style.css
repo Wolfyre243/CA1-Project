@@ -1,6 +1,12 @@
 /*  The style rules here should be reusable across all elements.
     This stylesheet is the main stylesheet of the entire webpage. */
 
+/* 
+    Contents:
+    1. Basic Formats for common elements
+    2. Specific formats for specialised components like cards for content
+*/
+
 h1.banner-text {
     color: aliceblue;
 
@@ -66,7 +72,7 @@ li.small-list-button:hover {
     transform: scale(1.2,1.2);
     margin-left: 10px;
     margin-right: 10px;
-    box-shadow: 0px 0px 40px rgba(0,0,0,0.8);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.8);
     border: 2px solid rgba(0,0,0,0.8);
 
     animation: expanding-shadow 2s ease-in-out infinite;
@@ -82,7 +88,7 @@ div.divider {
     position: relative;
 
     height: 5px; /* changes line thickness */
-    margin: 0 auto;
+    border-radius: 5px;
 }
 
 img.down-arrow {
@@ -121,4 +127,12 @@ a.logo-name-link {
     justify-content: center;
 }
 
+div.popout-card {
+    display: flex;
+    flex-direction: column;
+}
 
+div.popout-card > img {
+    margin-left: -100px;
+    margin-top: -100px;
+}

@@ -24,7 +24,7 @@ div#scroll-snap-container > section {
 }
 
 section#intro-section {
-    background: linear-gradient(170deg, rgba(205,205,205,0.2) 0%, rgba(242,242,242,0.3) 100%),
+    background: linear-gradient(170deg, rgba(27, 27, 27, 0.411) 0%, rgba(0, 0, 0, 0.562) 100%),
                 url(/Assets/Images/smiling-children-with-porridge.jpg) no-repeat; /* Credit to WGLT.org at https://www.wglt.org/show/wglts-sound-ideas/2016-05-02/students-launch-website-to-feed-starving-children */
                 
     background-size: cover;

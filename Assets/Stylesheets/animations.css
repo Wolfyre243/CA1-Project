@@ -59,9 +59,9 @@
 
 @keyframes expanding-shadow {
     from, to {
-        box-shadow: 0px 0px 30px rgba(190, 190, 190, 0.3);
+        box-shadow: 0px 2px 10px rgba(190, 190, 190, 0.2);
     }
     50% {
-        box-shadow: 0px 0px 60px rgba(190, 190, 190, 0.6);
+        box-shadow: 0px 2px 15px rgba(190, 190, 190, 0.3);
     }
 }
