@@ -3,6 +3,10 @@
 
     Contents:
     1. Style rules for content sections and its children
+
+
+    For reference:
+    Color palette = #00171F #53DD6C #6A706E #FFFFFF
 */
 
 html {
@@ -11,7 +15,11 @@ html {
 }
 
 body {
-    background-color: #F7F5F4;
+    background-color: #FFFEFA;
+}
+
+div.content-card, div.image-desc-card {
+    background-color: #6A706E;
 }
 
 div.content-section-banner > h1 {
@@ -25,25 +33,50 @@ div.content-section-banner > h1 {
 /* Style the content banner */
 section#content-1 > div.content-section-banner {
     background: linear-gradient(170deg, rgba(146, 146, 146, 0.253) 0%, rgba(0, 0, 0, 0.37) 100%) fixed no-repeat,
-                url(/Assets/Images/hungry-children-lined-up.jpeg) fixed no-repeat top -20vh center; /* Credit to CNBC at https://www.cnbc.com/2021/07/09/oxfam-war-covid-and-climate-change-fuel-hunger-crisis-killing-11-every-minute.html, from Getty Images */
+                url(/Assets/Images/hungry-children-lined-up.jpeg) fixed no-repeat top -20vh center; /* Credit to Leadership at https://leadership.ng/images-of-starving-children-in-gaza-grip-the-world/ */
     background-size: cover;
-    
 }
 
-section#content-1 > p#cont-1-p-A {
+/* Some simple layout style rules specific to this webpage */
+section#content-1 > div.content-card > p {
+    font-size: 2rem;
+}
+
+section#content-1 div.hover-popout-container {
+    color: aliceblue;
+    border-radius: 20px;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+
+div.hover-popout-container > p {
+    background-color: #44444D;
+    transform: translateY(100px);
+}
+
+/* Styling content1-card-1 */
+section#content-1 > div#content1-card-1 {
     grid-row: 3 / span 1;
     grid-column: 1 / span 4;
 
-    border-radius: 30px;
-    padding-top: 50px;
-    margin-top: 30px;
-    margin-left: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
-    background-color: #74717B;
+    border-radius: 30px;
+    margin-top: 5%;
+    margin-left: 5%;
+    
     color: #F7F5F4;
-    
-    box-shadow: 0px 10px 50px rgba(66, 66, 66, 0.4);
-    
+}
+
+div#content1-card-1 > img {
+    width: 75px;
+    height: 75px;
+
+    filter: invert(100%);
+
+    margin-right: 25px;
 }
 
 section#content-1 > figure.inline-image {
@@ -60,47 +93,85 @@ figure.inline-image img {
     height: 35vh;
 }
 
-section#content-1 div.image-desc-card {
-    background-color: #74717B;
-
+/* Styling content1-card-2 */
+section#content-1 div#content1-card-2 {
     grid-row: 4 / span 1;
-    grid-column: 1 / span 5;
+    grid-column: 1 / -1;
 
     margin-top: 10%;
     margin-left: 5%;
+    margin-right: 5%;
     height: 40vh;
 }
 
-section#content-1 div.hover-popout-container {
-    color: aliceblue;
-    border-radius: 20px;
-    margin-top: -40px;
-}
-
-div.image-desc-card img {
+div#content1-card-2 img {
     width: fit-content;
     height: 45vh;
     margin: auto;
 
     border-radius: 20px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+    z-index: 1; /* puts the image in front of its popout desc */
 }
 
-div.hover-popout-container > p {
-    background-color: #44444D;
-    
-    transform: translateY(100px);
-}
-
-section#content-1 > div.image-desc-card > p {
+div#content1-card-2 > p {
     color: #F7F5F4;
+    margin: auto;
+    font-size: 2rem;
 }
 
+/* Styling content1-card-3 */
+div#content1-card-3 {
+    grid-row: 5 / span 1;
+    grid-column: 1 / -1;
+
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 40vh;
+
+    color: #6A706E;
+}
+
+div#content1-card-3 > div.multi-column-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+div#content1-card-3 > h1 {
+    grid-row: 1 / span 1;
+    grid-column: 1 / -1;
+    width: fit-content;
+    padding: 25px;
+    margin-bottom: 30px;
+
+    border-bottom: 3px solid #6A706E;
+}
+
+div#content1-card-3 > div.multi-column-container > div {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding: 30px;
+}
+
+/* Section 2 */
 section#content-2 > div.content-section-banner {
     background-image: url(/Assets/Images/starving-pair.webp); /* Credit to Concern US at https://concernusa.org/news/causes-of-world-hunger/ */
     background-size: cover;
     background-attachment: fixed;
 }
+
+/* Section 3 */
 
 section#content-3 > p {
     grid-column: 1 / -1;

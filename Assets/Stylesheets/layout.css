@@ -51,8 +51,10 @@ header#sticky-banner {
     position: sticky; /* important to ensure banner stays on the top of the page. */
     top: 0;
 
-    background-color: rgb(0, 28, 41);
+    background-color: #00171F;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.349);
+
+    z-index: 10; /* Ensures everything goes below it. */
 }
 
 header#sticky-banner img#small-logo {
@@ -72,11 +74,11 @@ header#sticky-banner img#small-logo:hover {
 }
 
 header#sticky-banner > ul > li {
-    background-color: antiquewhite;
+    background-color: #08A075;
 }
 
 header#sticky-banner > ul > li:hover {
-    background-color: white;
+    background-color: #287761;
 }
 
 /* Below are style rules that will affect the scroll-snap property of section elements */
@@ -109,7 +111,7 @@ section.snap-scroll-section {
 section.grid-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0px 40vh auto auto auto 100px;
+    grid-template-rows: 0px 40vh auto auto auto 250px;
     /* Layout: buffer, banner, text, text, text buffer */
 }
 
@@ -135,7 +137,7 @@ section.grid-content > p {
     padding: 20px;
 }
 
-section.grid-content > p > a {
+section.grid-content  a {
     text-decoration: underline dotted 2px;
     font: inherit;
 }

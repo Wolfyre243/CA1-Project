@@ -54,12 +54,13 @@ li.small-list-button {
     display: inline-flex;
     justify-content: center;
     
-    width: 100px;
+    width: 120px;
     height: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
 
     font-size: 1.6rem;
+    font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 
     padding: 2px;
@@ -70,10 +71,10 @@ li.small-list-button {
 /* Hover variant for the above style rule */
 li.small-list-button:hover {
     transform: scale(1.2,1.2);
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     box-shadow: 0px 10px 20px rgba(0,0,0,0.8);
-    border: 2px solid rgba(0,0,0,0.8);
+    border: 2px solid rgba(138, 138, 138, 0.623);
 
     animation: expanding-shadow 2s ease-in-out infinite;
 }
@@ -125,6 +126,15 @@ a.logo-name-link {
     max-width: fit-content;
     align-items: center;
     justify-content: center;
+}
+
+div.content-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 20px;
+
+    box-shadow: 0px 10px 40px rgba(66, 66, 66, 0.6);
 }
 
 /*

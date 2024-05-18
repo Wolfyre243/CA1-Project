@@ -1,0 +1,12 @@
+This is a text file documenting all references used throughout this project.
+
+Contents:
+1. Image references
+2. index.html - Content research references
+3. my-plede.html - Content research references
+
+----------------------------------------------------------------
+
+Image references
+
+Icons are taken from Flaticon, courtesy of Freepik. Available at https://www.flaticon.com/ and https://www.freepik.com/ respectively.
