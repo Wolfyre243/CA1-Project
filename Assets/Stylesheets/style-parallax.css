@@ -154,10 +154,7 @@ div#parallax-3 > blockquote > h1 {
     letter-spacing: 2px;
     text-align: center;
 
-    background-image: url(/Assets/Images/smiling-child-with-food.jpg);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: whitesmoke;
     background-attachment: fixed;
     background-size: cover;
     background-position: 30%, 0%;
@@ -173,7 +170,7 @@ div#parallax-3 > div.scroll-prompt {
     color: white;
 
     margin: auto;
-    margin-top: 3em;
+    margin-top: 5vh;
 }
 
 div#parallax-3 > div.scroll-prompt > h1 > strong {
@@ -192,7 +189,7 @@ div#parallax-3 > div > img.down-arrow {
     height: 50px;
 
     margin: auto;
-    margin-top: 2em;
+    margin-top: 5%;
 
     animation: floating-element 1s ease-in-out infinite;
 }

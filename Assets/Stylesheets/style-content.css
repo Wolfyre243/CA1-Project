@@ -2,20 +2,24 @@
     the main contents of the homepage and its children.
 
     Contents:
-    1. Style rules for content sections and its children
+    0. Basic style rules for overall element structure etc
+    1. Style rules content section 1
+    2. Style rules content section 2
+    3. Style rules content section 3
 
 
     For reference:
-    Color palette = #00171F #53DD6C #6A706E #FFFFFF
+    Color palette = #00171F #53DD6C #6A706E #FFFFFF (outdated)
 */
 
+/* 0. Basic Style rules for some components */
 html {
     width: 100%;
     height: 100%;
 }
 
 body {
-    background-color: #FFFEFA;
+    background-color: #f9f9f9;
 }
 
 div.content-card, div.image-desc-card {
@@ -23,13 +27,16 @@ div.content-card, div.image-desc-card {
 }
 
 div.content-section-banner > h1 {
-    font-family: 'Bebas Neue';
+    font-family: "Bebas Neue";
     font-size: 9rem;
     letter-spacing: 0.5rem;
     margin: auto;
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
 }
 
+/* ---------------------------------------------------------------- */
+
+/* 1. Section 1 - What is Zero Hunger? */
 /* Style the content banner */
 section#content-1 > div.content-section-banner {
     background: linear-gradient(170deg, rgba(146, 146, 146, 0.253) 0%, rgba(0, 0, 0, 0.37) 100%) fixed no-repeat,
@@ -37,7 +44,7 @@ section#content-1 > div.content-section-banner {
     background-size: cover;
 }
 
-/* Some simple layout style rules specific to this webpage */
+/* Style the contents of this section */
 section#content-1 > div.content-card > p {
     font-size: 2rem;
 }
@@ -88,13 +95,15 @@ section#content-1 > figure.inline-image {
     margin-top: 10%;
 }
 
-figure.inline-image img {
+section#content-1 > figure.inline-image > img {
     width: 20vw;
     height: 35vh;
 }
 
 /* Styling content1-card-2 */
+/* This content card holds an image popout container div */
 section#content-1 div#content1-card-2 {
+    display: flex;
     grid-row: 4 / span 1;
     grid-column: 1 / -1;
 
@@ -132,7 +141,7 @@ div#content1-card-3 {
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
-    height: 40vh;
+    height: 100vh;
 
     color: #6A706E;
 }
@@ -141,34 +150,150 @@ div#content1-card-3 > div.multi-column-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 
     width: 100%;
 }
 
-div#content1-card-3 > h1 {
-    grid-row: 1 / span 1;
-    grid-column: 1 / -1;
+div#content1-card-3 > h1:first-child {
+    
     width: fit-content;
-    padding: 25px;
+    padding: 20px;
+    padding-bottom: 5px;
     margin-bottom: 30px;
+
+    font-size: 5rem;
 
     border-bottom: 3px solid #6A706E;
 }
 
-div#content1-card-3 > div.multi-column-container > div {
-    text-align: center;
+div#content1-card-3 > div.multi-column-container div {
     margin-left: auto;
     margin-right: auto;
+    
     width: 25%;
     padding: 30px;
 }
+
+div#content1-card-3 > div.multi-column-container div > p {
+    font-size: 2rem;
+}
+
+div#content1-card-3 > div.multi-column-container div > h1 {
+    font-size: 4rem;
+}
+
+div#content1-card-3 > h1:last-child {
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 0px;
+    
+
+    font-size: 5rem;
+}
+
+/* ------------------------------------------------------------- */
 
 /* Section 2 */
 section#content-2 > div.content-section-banner {
     background-image: url(/Assets/Images/starving-pair.webp); /* Credit to Concern US at https://concernusa.org/news/causes-of-world-hunger/ */
     background-size: cover;
     background-attachment: fixed;
+}
+
+section#content-2 > figure.inline-image {
+    grid-row: 3 / span 2;
+    grid-column: 1 / span 3;
+    margin-left: 10%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+section#content-2 > figure.inline-image > img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+
+    margin: auto;
+}
+
+/* Styling content2-card-1 */
+section#content-2 > div#content2-card-1 {
+    grid-row: 3 / span 1;
+    grid-column: 4 / span 3;
+
+    color: white;
+
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5px;
+}
+
+/* Styling content2-card-2, which is a "button" */
+section#content-2 > div#content2-card-2 {
+    grid-row: 4 / span 1;
+    grid-column: 4 / span 3;
+
+    padding: 15px;
+    background-color: #08A075;
+    color: white;
+
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+section#content-2 > div#content2-card-2:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+}
+
+section#content-2 > div#content2-card-2 > a {
+    text-align: center;
+    line-height: 80%;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Styling the content-card-container which holds more divs inside it. */
+section#content-2 > div.content-card-container {
+    grid-row: 5 / span 1;
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+/* Styling content2-card-3, a card nested inside a larger div */
+div#content2-card-3 {
+    justify-content: left;
+    align-items: left;
+    width: 80%;
+    height: 50vh;
+
+    margin: 15%;
+}
+
+div#content2-card-3 > div.hover-popout-container > img {
+    width: 35vw;
+    height: auto;
+
+    margin: auto;
+
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+    z-index: 1; /* puts the image in front of its popout desc */
+}
+
+div#content2-card-3 > div.hover-popout-container {
+    margin-top: -10%;
+    margin-left: -5%;
 }
 
 /* Section 3 */

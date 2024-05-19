@@ -10,3 +10,12 @@ Contents:
 Image references
 
 Icons are taken from Flaticon, courtesy of Freepik. Available at https://www.flaticon.com/ and https://www.freepik.com/ respectively.
+
+"1in10-people-icon.png" taken from https://www.health.pa.gov/topics/programs/Pages/Health-Literacy.aspx
+
+----------------------------------------------------------------
+
+Content research references
+
+World Hunger Facts:
+https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/

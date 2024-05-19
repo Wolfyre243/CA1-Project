@@ -9,12 +9,14 @@
 
 h1.banner-text {
     color: aliceblue;
+    
 
     letter-spacing: 1px;
 
     align-items: center;
-    margin-left: 20px;
-    margin-top: 0.8em;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /*  Creates a box whose size can be changed individually, 
@@ -43,10 +45,10 @@ img.scroll-arrow {
 .navbar {
     float: right;
     list-style: none;
-    margin-top: 15px;
-
-    margin-left: auto;
+    margin: auto;
     margin-right: 20px;
+
+    height: fit-content;
 }
 
 /* Creates a button-like appearance for list item elements */
@@ -128,6 +130,17 @@ a.logo-name-link {
     justify-content: center;
 }
 
+figure.inline-image {
+    align-self: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+figure.inline-image > figcaption {
+    font: 15px "Times New Roman", arial, helvetica;
+    font-style: italic;
+}
+
 div.content-card {
     display: flex;
     flex-direction: column;
@@ -137,12 +150,21 @@ div.content-card {
     box-shadow: 0px 10px 40px rgba(66, 66, 66, 0.6);
 }
 
+div.content-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
 /*
     Creates a card with the format image : description
     By default the image is placed on the left of the card, visibly popping out
 */
 div.image-desc-card {
-    display: flex;
+    display: block;
+    
     border-radius: 20px;
 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
@@ -155,7 +177,7 @@ div.hover-popout-container {
     justify-content: center;
     align-items: center;
     align-self: center;
-    height: fit-content;
+    width: fit-content;
 
     transition: all 0.2s ease-in-out;
 }
