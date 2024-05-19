@@ -112,7 +112,7 @@ div#parallax-2 > div.title-box > h1 {
 div#parallax-2 > div.title-box > p {
     color: white;
 
-    font: 4vh arial, helvetica, sans-serif;
+    font-size: 3rem;
     text-align: center;
 
     margin: auto;
@@ -168,6 +168,7 @@ div#parallax-3 > blockquote > footer {
 
 div#parallax-3 > div.scroll-prompt {
     color: white;
+    text-align: center;
 
     margin: auto;
     margin-top: 5vh;

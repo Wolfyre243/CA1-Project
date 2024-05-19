@@ -10,7 +10,6 @@ The elements styled here are major components that contribute greatly to the ove
 
 */
 html {
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 62.5%; 
     /* Sets the stage for use of root em, in order to keep font sizes constant across devices */
     /* 10px = 0.625rem */
@@ -38,7 +37,7 @@ div.parallax {
 }
 
 div.parallax-buffer {
-    background-color: #2A2934;
+    background-color: #08A075;
     min-height: 5vh;
 }
 
@@ -112,7 +111,7 @@ section.snap-scroll-section {
 section.grid-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0px 40vh auto auto auto 200px;
+    grid-template-rows: 0px 40vh auto auto auto auto 200px;
     /* Layout: buffer, banner, text, text, text buffer */
 }
 
@@ -139,7 +138,6 @@ div.content-section-banner {
 
 section.grid-content  a {
     text-decoration: underline dotted 2px;
-    font: inherit;
 }
 
 /* Creates a figure that holds an image and a caption. Position is adjusted in respective css files. */

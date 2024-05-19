@@ -12,10 +12,14 @@ Image references
 Icons are taken from Flaticon, courtesy of Freepik. Available at https://www.flaticon.com/ and https://www.freepik.com/ respectively.
 
 "1in10-people-icon.png" taken from https://www.health.pa.gov/topics/programs/Pages/Health-Literacy.aspx
-
+"flooded-area" taken from https://www.greenpeace.org/africa/en/blogs/50468/extreme-weather-is-taking-its-toll-on-africa/
+"conflict-and-hunger" taken from https://www.csis.org/analysis/dangerously-hungry-link-between-food-insecurity-and-conflict
+"boy-in-village" taken from https://www.actionagainsthunger.org/the-hunger-crisis/the-causes-of-hunger/inequity/
 ----------------------------------------------------------------
 
 Content research references
 
 World Hunger Facts:
 https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/
+https://www.actionagainsthunger.org/the-hunger-crisis/the-causes-of-hunger/climate-change/
+

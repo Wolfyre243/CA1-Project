@@ -22,6 +22,14 @@ body {
     background-color: #f9f9f9;
 }
 
+h1 {
+    color: #f9f9f9;
+}
+
+p {
+    color: #f9f9f9;
+}
+
 div.content-card, div.image-desc-card {
     background-color: #6A706E;
 }
@@ -50,7 +58,7 @@ section#content-1 > div.content-card > p {
 }
 
 section#content-1 div.hover-popout-container {
-    color: aliceblue;
+    color: #f9f9f9;
     border-radius: 20px;
     margin-top: -40px;
     margin-right: 20px;
@@ -74,7 +82,7 @@ section#content-1 > div#content1-card-1 {
     margin-top: 5%;
     margin-left: 5%;
     
-    color: #F7F5F4;
+    color: #f9f9f9;
 }
 
 div#content1-card-1 > img {
@@ -119,14 +127,15 @@ div#content1-card-2 img {
     margin: auto;
 
     border-radius: 20px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
     z-index: 1; /* puts the image in front of its popout desc */
 }
 
 div#content1-card-2 > p {
-    color: #F7F5F4;
+    color: #f9f9f9;
     margin: auto;
+    margin-right: 2%;
     font-size: 2rem;
+    
 }
 
 /* Styling content1-card-3 */
@@ -144,6 +153,7 @@ div#content1-card-3 {
     height: 100vh;
 
     color: #6A706E;
+    text-shadow: none;
 }
 
 div#content1-card-3 > div.multi-column-container {
@@ -152,11 +162,12 @@ div#content1-card-3 > div.multi-column-container {
     justify-content: center;
     align-items: baseline;
 
+    color: #6A706E;
+
     width: 100%;
 }
 
 div#content1-card-3 > h1:first-child {
-    
     width: fit-content;
     padding: 20px;
     padding-bottom: 5px;
@@ -173,6 +184,8 @@ div#content1-card-3 > div.multi-column-container div {
     
     width: 25%;
     padding: 30px;
+
+    
 }
 
 div#content1-card-3 > div.multi-column-container div > p {
@@ -187,8 +200,7 @@ div#content1-card-3 > h1:last-child {
     width: fit-content;
     padding: 20px;
     margin: auto;
-    margin-bottom: 0px;
-    
+    margin-bottom: 20px;
 
     font-size: 5rem;
 }
@@ -259,6 +271,7 @@ section#content-2 > div#content2-card-2 > a {
     text-align: center;
     line-height: 80%;
     text-decoration: none;
+    
     font-size: 1.8rem;
     font-weight: bold;
 }
@@ -273,13 +286,22 @@ section#content-2 > div.content-card-container {
 /* Styling content2-card-3, a card nested inside a larger div */
 div#content2-card-3 {
     justify-content: left;
-    align-items: left;
+    align-items: center;
     width: 80%;
     height: 50vh;
+
+    color: white;
 
     margin: 15%;
 }
 
+/* Place the popout container at the top right */
+div#content2-card-3 > div.hover-popout-container {
+    margin-top: -20%;
+    margin-left: -8%;
+}
+
+/* Style the image inside the popout container */
 div#content2-card-3 > div.hover-popout-container > img {
     width: 35vw;
     height: auto;
@@ -287,13 +309,93 @@ div#content2-card-3 > div.hover-popout-container > img {
     margin: auto;
 
     border-radius: 20px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
     z-index: 1; /* puts the image in front of its popout desc */
 }
 
-div#content2-card-3 > div.hover-popout-container {
-    margin-top: -10%;
-    margin-left: -5%;
+/* Style the paragraph of text inside the content card */
+div#content2-card-3-textbox {
+    align-self: baseline;
+    margin: 3%;
+}
+
+div#content2-card-4 {
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    height: fit-content;
+    padding: 2%;
+
+    color: white;
+
+    margin: 2%
+}
+
+div#content2-card-4 > img {
+    width: 35vw;
+    height: auto;
+    margin-top: -18%;
+    margin-bottom: 2%;
+
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+div#content2-card-4 > p {
+    width: 80%;
+}
+
+div#content2-card-4 > a {
+    background-color: #08A075;
+    border-radius: 10px;
+    padding: 15px;
+
+    text-decoration: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.2s ease-in-out;
+}
+
+div#content2-card-4 > a:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+}
+
+div#content2-card-5 {
+    justify-content: left;
+    align-items: center;
+    width: 80%;
+    height: 50vh;
+
+    color: white;
+
+    margin: 15%;
+}
+
+div#content2-card-5 > div.hover-popout-container {
+    margin-top: -20%;
+    margin-right: -8%;
+}
+
+div#content2-card-5 > div.hover-popout-container > img {
+    width: 35vw;
+    height: auto;
+
+    border-radius: 20px;
+}
+
+div#content2-card-6 {
+    grid-row: 6 / span 1;
+    grid-column: 1 / -1;
+    width: 80%;
+    margin: auto;
+
+    color: #6A706E;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    
+    align-self: center;
+    text-align: center;
+    text-shadow: none;
 }
 
 /* Section 3 */

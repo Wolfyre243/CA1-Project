@@ -148,6 +148,12 @@ div.content-card {
     padding: 20px;
 
     box-shadow: 0px 10px 40px rgba(66, 66, 66, 0.6);
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1.contentcard-heading {
+    font-size: 6rem;
+    font-weight: bold;
 }
 
 div.content-card-container {
@@ -163,11 +169,11 @@ div.content-card-container {
     By default the image is placed on the left of the card, visibly popping out
 */
 div.image-desc-card {
-    display: block;
-    
+    display: flex;
     border-radius: 20px;
 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* A secondary component to the image-desc-card, which encases the image and its corresponding popout tag */
@@ -179,7 +185,13 @@ div.hover-popout-container {
     align-self: center;
     width: fit-content;
 
+    color: aliceblue;
+
     transition: all 0.2s ease-in-out;
+}
+
+div.hover-popout-container > img {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 div.hover-popout-container > p {
