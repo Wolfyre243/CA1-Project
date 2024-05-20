@@ -10,10 +10,6 @@ The elements styled here are major components that contribute greatly to the ove
 
 */
 html {
-    font-size: 62.5%; /* To be removed */
-    /* Sets the stage for use of root em, in order to keep font sizes constant across devices */
-    /* 10px = 0.625rem */
-    /* x rem = x times the font-size of html element. */
     scrollbar-width: none; /* Removes the scrollbar */
 }
 
@@ -48,21 +44,30 @@ div.parallax-buffer {
 */
 header#sticky-banner {
     display: flex;
+    flex-direction: row;
     position: sticky; /* important to ensure banner stays on the top of the page. */
     top: 0;
-    height: fit-content;
+    padding: 1vh 1vw;
+    height: 12vh;
 
     background-color: #00171F;
     
-
     z-index: 10; /* Ensures everything goes below it. */
 }
 
-header#sticky-banner img#small-logo {
-    padding: 5px;
-    border-radius: 20px;
-    
+header#sticky-banner > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1vw;
+}
 
+header#sticky-banner img#small-logo {
+    width: 5vw;
+    height: auto;
+    align-self: center;
+    border-radius: 10%;
+    
     transition: all 0.5s;
 }
 
@@ -112,7 +117,7 @@ section.snap-scroll-section {
 section.grid-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0px 40vh auto auto auto auto 200px;
+    grid-template-rows: 0px 40vh auto auto auto auto auto 200px;
     /* Layout: buffer, banner, text, text, text buffer */
 }
 
@@ -140,6 +145,8 @@ div.content-section-banner {
 section.grid-content  a {
     text-decoration: underline dotted 2px;
 }
+
+
 
 /* Creates a figure that holds an image and a caption. Position is adjusted in respective css files. */
 

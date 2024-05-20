@@ -9,10 +9,8 @@
 
 h1.banner-text {
     color: aliceblue;
-    
 
     letter-spacing: 1px;
-
     align-items: center;
     margin-left: 10px;
     margin-top: auto;
@@ -43,38 +41,43 @@ img.scroll-arrow {
 }
 
 .navbar {
-    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    
     list-style: none;
     margin: auto;
-    margin-right: 20px;
+    margin-right: 0.2vw;
 
-    height: fit-content;
+    height: auto;
+    width: 30vw;
 }
 
 /* Creates a button-like appearance for list item elements */
 li.small-list-button {
-    display: inline-flex;
-    justify-content: center;
     
-    width: 120px;
-    height: 20px;
-    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+    width: 30vw;
+    height: fit-content;
+    
+    border-radius: 1vw;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
 
-    font-size: 1.6rem;
+    font-size: 1.4vw;
     font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
 
-    padding: 2px;
-    margin: 5px;
+    padding: 0.1vh 0.2vw;
+    margin: 0.2vh 0.5vw;
 
     transition: all 0.3s ease-in-out;
 }
 /* Hover variant for the above style rule */
 li.small-list-button:hover {
     transform: scale(1.2,1.2);
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 1vw;
+    margin-right: 1vw;
     box-shadow: 0px 10px 20px rgba(0,0,0,0.8);
     border: 2px solid rgba(138, 138, 138, 0.623);
 
@@ -83,6 +86,11 @@ li.small-list-button:hover {
 
 li.small-list-button > a {
     margin: auto;
+}
+
+li.small-list-button > a > img {
+    width: 1.2vw;
+    height: auto;
 }
 
 /* Creates a modular line divider */
@@ -107,7 +115,7 @@ blockquote > h1::before {
     color: white;
     position: absolute;
     content: open-quote;
-    font-size: 2em;
+    font-size: 10vw;
     margin-left: -0.6em;
     margin-top: -0.4em;
 }
@@ -117,15 +125,14 @@ blockquote > h1::after {
     position: absolute;
     content: close-quote;
     font-size: 2em;
-    right: 0;
-    margin-right: -0.2em;
+    margin-left: 0.4em;
+    margin-top: 0.2em;
 }
 
 /* A reusable format for a elements that require a logo:name format */
 a.logo-name-link {
     display: flex;
     flex-direction: row;
-    max-width: fit-content;
     align-items: center;
     justify-content: center;
 }
@@ -137,7 +144,7 @@ figure.inline-image {
 }
 
 figure.inline-image > figcaption {
-    font: 15px "Times New Roman", arial, helvetica;
+    font: 1.2vw "Times New Roman", arial, helvetica;
     font-style: italic;
 }
 
@@ -145,7 +152,9 @@ div.content-card {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    padding: 20px;
+
+    padding: 2vh 2vw;
+    margin: 5vh 5vw;
 
     box-shadow: 0px 10px 40px rgba(66, 66, 66, 0.6);
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
@@ -156,7 +165,7 @@ a.link-hover-fx:hover {
 }
 
 h1.contentcard-heading {
-    font-size: 6rem;
+    font-size: 5vw;
     font-weight: bold;
 }
 
@@ -175,6 +184,7 @@ div.content-card-container {
 div.image-desc-card {
     display: flex;
     border-radius: 20px;
+    margin: 5vw;
 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -213,4 +223,20 @@ div.hover-popout-container:hover > p {
 
 div.hover-popout-container:hover {
     transform: scale(1.1, 1.1);
+}
+
+a.small-button-link {
+    background-color: #08A075;
+    border-radius: 10px;
+    padding: 1vh 1vw;
+    font-size: 1.4vw;
+    text-decoration: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.2s ease-in-out;
+}
+
+a.small-button-link:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
 }

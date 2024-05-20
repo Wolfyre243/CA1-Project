@@ -147,7 +147,8 @@ div#top-bar {
 }
 
 div#top-bar > ul.navbar {
-    margin: 20px;
+    margin-top: 2vh;
+    margin-right: 2vw;
 }
 
 div#top-bar > ul.navbar > li {
