@@ -51,6 +51,7 @@ div#title-box-left {
 /* Organises the h1 element to fit perfectly with the image by aligning it */
 div#title-box-left > div#header-box > h1 {
     margin-left: 5%;
+    letter-spacing: 1px;
     align-self: center;
     height: auto;
 
@@ -113,6 +114,7 @@ div#title-box-right {
 
 div#title-box-right > h1 {
     font-size: 5rem;
+    letter-spacing: 3px;
 }
 
 div#title-box-right > p {
@@ -142,6 +144,10 @@ section#content-section {
 div#top-bar {
     width: 100%;
     height: 10vh;
+}
+
+div#top-bar > ul.navbar {
+    margin: 20px;
 }
 
 div#top-bar > ul.navbar > li {

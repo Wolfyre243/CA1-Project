@@ -53,7 +53,7 @@ section#content-1 > div.content-section-banner {
 }
 
 /* Style the contents of this section */
-section#content-1 > div.content-card > p {
+section#content-1 > div.content-card p{
     font-size: 2rem;
 }
 
@@ -234,7 +234,7 @@ section#content-2 > figure.inline-image > img {
 }
 
 /* Styling content2-card-1 */
-section#content-2 > div#content2-card-1 {
+div#content2-card-1 {
     grid-row: 3 / span 1;
     grid-column: 4 / span 3;
 
@@ -247,7 +247,7 @@ section#content-2 > div#content2-card-1 {
 }
 
 /* Styling content2-card-2, which is a "button" */
-section#content-2 > div#content2-card-2 {
+div#content2-card-2 {
     grid-row: 4 / span 1;
     grid-column: 4 / span 3;
 
@@ -324,6 +324,7 @@ div#content2-card-4 {
     width: 80%;
     height: fit-content;
     padding: 2%;
+    font-size: 1.6rem;
 
     color: white;
 
@@ -399,10 +400,39 @@ div#content2-card-6 {
 }
 
 /* Section 3 */
+section#content-3 > div.content-section-banner {
+    background: url(/Assets/Images/children-eating-happy.jpg) fixed no-repeat;
+    background-size: cover;
+    background-position: 50% center;
+}
 
-section#content-3 > p {
+/* Styling content3-card-1 */
+section#content-3 > div#content3-card-1 {
     grid-column: 1 / -1;
     grid-row: 3 / span 1;
+
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+
+    text-align: center;
+
+    width: 80%;
+
+    color: #6A706E;
+    background-color: rgba(0, 0, 0, 0);
+    text-shadow: none;
+    box-shadow: none;
+}
+
+div#content3-card-1 a.logo-name-link {
+    margin: auto;
+}
+
+div#content3-card-1 a.logo-name-link > img {
+    width: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
 section#content-3 > div#solution-triangle {
@@ -412,7 +442,7 @@ section#content-3 > div#solution-triangle {
     margin-top: 2%;
 
     display: grid;
-    grid: 150px 150px 150px / 200px 200px 200px;
+    grid: 150px 200px 150px / 200px 200px 200px;
     column-gap: 200px;
     
     justify-content: center;
@@ -420,6 +450,8 @@ section#content-3 > div#solution-triangle {
 }
 
 div.solution-nodes {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -433,44 +465,74 @@ div.solution-nodes {
 }
 
 div.solution-nodes:hover {
-    transform: scale(1.4, 1.4);
+    transform: scale(1.5, 1.5);
+}
+
+div.solution-nodes h1 {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+div.solution-nodes:hover h1 {
+    color: #f9f9f9;
+    opacity: 1;
+    background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
 }
 
 div#solution-triangle > h1 {
     text-align: center;
     vertical-align: middle;
+    color: #6A706E;
+
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-
-    opacity: 0;
 }
 
 div#solution-triangle div#node-1 {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    background-color: green;
-}
-div#node-1:hover ~ h1#node-1-desc {
-    opacity: 1;
+
+    background: url(/Assets/Images/food-from-the-heart-A.webp) no-repeat;
+    background-size: cover;
 }
 
 div#solution-triangle div#node-2 {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
-    background-color: red;
+    
+    background: url(/Assets/Images/wwf-logo.jpg) no-repeat center center;
+    background-size: cover;
 }
-div#node-2:hover ~ h1#node-2-desc {
-    opacity: 1;
-}
+
 
 div#solution-triangle div#node-3 {
     grid-column: 3 / span 1;
     grid-row: 3 / span 1;
-    background-color: blue;
+    background: url(/Assets/Images/the-hunger-proj-img.jpg) no-repeat;
+    background-size: cover;
 }
-div#node-3:hover ~ h1#node-3-desc {
-    opacity: 1;
+
+div#content3-card-2 {
+    grid-column: 1 / -1;
+    grid-row: 5 / span 1;
+
+    flex-direction: column;
+
+    margin: 5%;
+    margin-top: 20%;
 }
+
+div#content3-card-2 div.hover-popout-container {
+    margin-top: -18%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+div#content3-card-2 div.hover-popout-container > img {
+    width: 35vw;
+}
+
 
 
 

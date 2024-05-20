@@ -5,13 +5,16 @@
 }
 
 a {
-    font-size: 1.6rem; 
+    font-size: inherit; 
     font-family: "Roboto Condensed";
 
     color: inherit;
     text-align: inherit;
     text-decoration: none;
+
+    transition: all 0.2s ease-in-out;
 }
+
 
 h1 {
     font-family: "Bebas Neue";
