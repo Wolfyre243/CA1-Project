@@ -1,3 +1,22 @@
+<!--
+    ----------------------------Info----------------------------
+    Created by: Zhang Junkai DIT/FT/1A/02 p2429634
+    Date Started: 19th April 2024
+
+    ----------------------------Overview----------------------------
+    The references have been stored in a text file named 
+    "references.txt", which contains the sources where I retrieved my information from
+    as well as the attributions for images I downloaded from online
+    (The images have their sources commented out beside them.)
+
+    index.html draws its css from style-parallax.css (for parallax effects) and
+    style-content.css (for the content cards)
+
+    about-me.html draws its css from style-about-me.css
+
+    my-pledge.html draws its css from style-pledge.css
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +39,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!--Roboto Condensed-->
 </head>
 <body>
+    <!--Start of the parallax introduction-->
     <section id="parallax-scrolling">
+        <!--Parallax 1 will be the home screen of the webpage.-->
         <div class="parallax" id="parallax-1">
+            <!--The navbar is the bar on the top left of the screen. It contains links to the other webpages.-->
             <ul class="navbar">
                 <li class="small-list-button">
                     <a href="/Webpages/index.html" class="logo-name-link">
@@ -48,9 +70,8 @@
             </div>
 
         </div>
-
         <div class="parallax-buffer"></div>
-    
+        <!--Parallax 2 acts as an attention grabber for the audience.-->
         <div class="parallax" id="parallax-2">
             <div class="title-box">
                 <h1>Did you know?</h1>
@@ -61,16 +82,15 @@
                     <br>
                     Why is this so?
                 </p>
-                
             </div>
         </div>
-
+        <!--The purpose of Parallax 3 is to invoke curiosity in the reader and get them thinking, or rather, excited.-->
         <div class="parallax" id="parallax-3">
-            <blockquote>
+            <blockquote> <!--A quote-->
                 <h1>If you cannot feed a hundred people, then feed just one.</h1>
                 <footer>- Mother Teresa</footer>
             </blockquote>
-            <div class="scroll-prompt">
+            <div class="scroll-prompt"> <!--A container to hold the prompt-->
                 <h1>World hunger is <strong>escalating</strong> at an alarming rate.</h1>
                 <p>Let's learn more about world hunger and how we can stop it:</p>
                 <img class="down-arrow" src="/Assets/Images/down-arrow.png" alt="Double arrows pointing downwards"> <!--Arrow icons created by th studio - Flaticon-->
@@ -80,13 +100,12 @@
 
     <!--Start of main content-->
     <header id="sticky-banner">
-
+        <!--A clickable, transforming image button.-->
         <a href="https://www.un.org/sustainabledevelopment/hunger/" target="_blank">
             <img id="small-logo" src="/Assets/Images/zero-hunger-sdg-logo.png" width="75" height="75" title="Official UN Website">
         </a>
-
         <h1 class="banner-text">The 17 SDGs: Acheiving Zero Hunger</h1>
-            
+        <!--The navbar here is reused.-->
         <ul class="navbar">
             <li class="small-list-button">
                 <a href="/Webpages/index.html" class="logo-name-link">
@@ -109,12 +128,19 @@
         </ul>
         
     </header> 
-
+    <!--
+        The first content section.
+        It utilises the grid layout, which makes it modular and easier to change.
+    -->
     <section class="grid-content" id="content-1">
+        <!--
+            The content banner is a short banner with a title for aesthetics.
+            This will appear again for every content section.
+        -->
         <div class="content-section-banner">
             <h1 class="banner-text">01 What is Zero Hunger?</h1>
         </div>
-
+        <!--A content card is a reusable class that acts as a container to hold information on a grid layout.-->
         <div class="content-card" id="content1-card-1">
             <img src="/Assets/Images/hunger-icon.png" alt="An icon depicting world hunger."> <!--Icon taken from Flaticon by Freepik-->
             <p>
@@ -123,18 +149,22 @@
                 is at an all time high, with close to 735 million people in a state of chronic hunger.
             </p>
         </div>
-
+        <!--
+            The inline-image class creates a container to hold an image and creates a caption for it too.
+            This class is easy to reuse.
+        -->
         <figure class="inline-image">
             <img id="unsdg-logo" src="/Assets/Images/unsdg-logo.png" alt="The logo of the UN SDGs">
             <figcaption>The logo of the UN SDGs.</figcaption>
         </figure>
 
         <div class="image-desc-card" id="content1-card-2">
+            <!--The popout container holds an image alongside its description, which will popout
+                when the user hovers on the image.-->
             <div class="hover-popout-container">
                 <p>A hungry child enjoying his food</p>
                 <img src="/Assets/Images/smiling-child-with-food.jpg" alt="A smiling child with food">
             </div>
-            
             <p>
                 The second SDG, Zero Hunger, aims to safeguard safe and nutritious food
                 for those in low-income regions, as well as to transform food systems, in order to achieve a sustainable world.
@@ -145,6 +175,7 @@
 
         <div class="content-card" id="content1-card-3">
             <h1>Zero Hunger amidst World Hunger</h1>
+            <!--The multi-column-container class holds multiple columns by using the flex display.-->
             <div class="multi-column-container">
                 <div>
                     <h1>735 Million</h1>
@@ -176,7 +207,6 @@
             </div>
             <h1>So, what causes world hunger?</h1>
         </div>
-
     </section>
 
     <div class="parallax-buffer"> </div>
@@ -211,7 +241,7 @@
                 Click to find out how YOU can contribute!
             </a>
         </div>
-
+        <!--The content card container is a container that holds multiple content cards when the grid layout is not appropriate.-->
         <div class="content-card-container">
             <div class="image-desc-card" id="content2-card-3">
                 <div class="hover-popout-container">
@@ -329,7 +359,10 @@
                 Here are a few of the leading organisations in the quest of overcoming World Hunger:
         </div>
 
+        <!--The solution triangle is a special component I made to display containers in a presentable gallery-->
         <div id="solution-triangle">
+            <!--Here, the solution nodes class is a container for information,
+                and has a background image.-->
             <div class="solution-nodes" id="node-1">
                 <h1>World Food Programme</h1>
             </div>
@@ -383,7 +416,6 @@
                 <br><br>
                 Lastly, WWF partners with governments and other organisations to reduce key impacts
                 of food production, convincing them to invest in sustainable food production.
-
             </p>
         </div>
 
@@ -392,6 +424,7 @@
                 <img src="/Assets/Images/wwf-logo.jpg" alt="The WWF Logo">
                 <figcaption>The WWF Logo</figcaption>
             </figure>
+            <!--The small button link class turns an anchor element into a "button"-like container.-->
             <a href="https://protect.worldwildlife.org/page/65220/donate/1?en_og_source=Web_Donation&ea.tracking.id=Web_Topnav&supporter.appealCode=AWE2402OQ18299A01179RX" 
             class="small-button-link">
                 Click here to donate!
@@ -401,7 +434,7 @@
         <div class="content-card" id="content3-card-5">
             <figure class="inline-image">
                 <img src="/Assets/Images/veronica-THP.jpg" alt="A local farmer turned community leader">
-                <figcaption>The WWF Logo</figcaption>
+                <figcaption>A local farmer who became a community leader with the help of The Hunger Project.</figcaption>
             </figure>
         </div>
 
@@ -420,6 +453,51 @@
                 <br>
         </div>
     </section>
+
+    <section id="conclusion-section">
+        <div class="content-card" id="conclusion-card">
+            <h1>Conclusion</h1>
+            <p>
+                To conclude this webpage, the problem of World Hunger is widespread and severe.
+                <br><br>
+                Acheiving the second SDG is no easy feat; it requires the united collaboration of
+                many lives just to inch closer to our goal of Zero Hunger. Foundations have been set up to
+                lead the way and take charge of this matter.
+                <br><br>
+                But <strong>YOU</strong> can play a part too! It's as simple as making a small donation to
+                one of the foundations mentioned above.
+            </p>
+        </div>
+        <!--Capture the reader's attention again.-->
+        <h1>In the time you've spent reading this webpage, <br> <strong>25 People</strong> died to hunger.</h1>
+    </section>
+
+    <!--The footer contains links to donations that readers may want to revisit again at the end.
+        It also contains the links to the other webpages I made for further reading.-->
+    <footer id="content-footer">
+        <div class="footer-container">
+            <div class="title-container">
+                <img src="/Assets/Images/zero-hunger-sdg-logo.png" alt="">
+                <div>
+                    <h1>The 17 Sustainable Development Goals</h1>
+                    <h1>02 Zero Hunger</h1>
+                </div>
+            </div>
+            <div class="donation-links-container">
+                <h1>DONATE</h1>
+                <a href="https://protect.worldwildlife.org/page/65220/donate/1?en_og_source=Web_Donation&ea.tracking.id=Web_Topnav&supporter.appealCode=AWE2402OQ18299A01179RX" class="link-hover-fx">World Wide Fund</a>
+                <a href="https://thp.org/?form=give-now" class="link-hover-fx">The Hunger Project</a>
+                <a href="https://www.wfpusa.org/wfp-redirect/" class="link-hover-fx">World Food Programme</a>
+            </div>
+            <div class="webpages-links-container">
+                <h1>About Me</h1>
+                <a href="/Webpages/about-me.html" class="link-hover-fx">About the Author</a>
+                <a href="/Webpages/my-pledge.html" class="link-hover-fx">My Aspirations for this SDG</a>
+            </div>
+        </div>
+        <!--A small watermark-->
+        <p>Website by Zhang Junkai, 2024</p>
+    </footer>
     
 </body>
 </html>

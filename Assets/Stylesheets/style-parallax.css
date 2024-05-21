@@ -47,7 +47,7 @@ div#parallax-1 > div.title-box {
 div#parallax-1 > div.title-box > img {
     margin-top: 10vh;
     left: auto;
-    border-radius: 10px;
+    border-radius: 10%;
 
     width: 30vh;
     height: 30vh;

@@ -126,7 +126,7 @@ div#title-box-right > div.scroll-prompt {
     animation: floating-element 3s ease-in-out infinite;
 }
 
-section#content-section {
+section#hobby-section {
     justify-content: flex-start;
     flex-direction: column;
 
@@ -137,6 +137,7 @@ section#content-section {
 div#top-bar {
     width: 100%;
     height: 10vh;
+    margin: auto;
 }
 
 div#top-bar > ul.navbar {
@@ -154,12 +155,12 @@ div#top-bar > ul.navbar > li:hover {
     box-shadow: 0px 0px 30px rgba(163, 163, 163, 0.5);
 }
 
-section#content-section > h1 {
+section#hobby-section > h1 {
     font-size: 5vw;
     text-align: center;
 }
 
-section#content-section > div.carousell-layout {
+section#hobby-section > div.carousell-layout {
     display: grid;
     grid: 1fr / 30vw 1fr 1fr 1fr 1fr 30vw;
     gap: 20%;
@@ -177,27 +178,163 @@ section#content-section > div.carousell-layout {
 }
 
 div.carousell-layout > section {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
     scroll-snap-align: center;
     scroll-snap-stop: always;
 
-    width: 30vw;
+    width: 50vw;
     height: 55vh;
-    
+    border-radius: 15px;
+
     background-color: antiquewhite;
 }
 
-footer {
-    width: 100%;
-    height: 70vh;
+div.carousell-layout > section h1 {
+    text-align: center;
+    vertical-align: middle;
+    margin: 1vh 2vw;
+    padding: 0.5%;
+    border-bottom: 2px solid black;
+}
 
+div.carousell-layout > section > div.content-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    
+    width: fit-content;
+    margin-top: 1vh;
+    box-shadow: none;
+}
+
+div.carousell-layout > section > div.content-card > p {
+    width: fit-content;
+}
+
+section#content-hobbies-1 > div.content-card > img {
+    width: 15vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+div#language-bar {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+div#language-bar img {
+    width: 3vw;
+    margin: 0.5vw;
+}
+
+section#content-interests-1 img {
+    width: 10vw;
+}
+
+section#content-interests-2 img {
+    width: 5vw;
+}
+
+section#personality-section {
+    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 
-    color: aliceblue;
-    background-color: rgb(0, 46, 57);
+    width: 100%;
+    height: 100%;
+}
+
+section#personality-section > div.content-card {
+    height: fit-content;
+    width: 40vw;
+    color: #f9f9f9;
+    background-color: #44444D;
+    box-shadow: 0px 0px 2.5vw rgba(255, 255, 255, 0.4);
+    padding: 2vh 2vw;
+}
+
+section#personality-section > div.content-card > h1 {
+    text-align: center;
+    border-bottom: 2px solid #f9f9f9;
+}
+
+section#personality-section > div.content-card > p {
+    margin: auto;
+    margin-top: 2vh;
+}
+
+section#personality-section > div.content-card > div {
+    display: flex;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+div#values-card > div {
+    flex-direction: column;
+    background-color: #08A075;
+    padding: 0.5vh 2vw;
+    width: 80%;
+    border-radius: 20px;
+}
+
+div#values-card > h1 {
+    opacity: 1;
+    vertical-align: middle;
+
+    transition: all 0.5s ease-in-out;
+}
+
+div#values-card > div > p {
+    opacity: 0;
+    font-size: 0.01vw;
+
+    transition: all 0.5s ease-in-out;
+}
+
+div#values-card > div:hover > p {
+    opacity: 1;
+    font-size: 1.6vw;
+}
+
+div#personality-card > div {
+    display: flex;
+    flex-direction: row;
+}
+
+div#personality-card img {
+    width: 10vw;
+    margin: auto;
+    margin-right: 2vw;
+}
+
+footer#footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #6A706E;
+    color: #f9f9f9;
+
+    height: 50vh;
+}
+
+footer#footer-section div.title-container {
+    margin-left: 2vw;
 }
 
 footer > p {
-    font-size: 2em;
+    margin: 5vh 1vw;
+    
+    font-size: 1.2vw;
     text-align: center;
 }

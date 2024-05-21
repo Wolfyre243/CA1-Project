@@ -1,15 +1,14 @@
-/*  The contents of this file influences the style of
+/*  
+    The contents of this file influences the style of
     the main contents of the homepage and its children.
 
     Contents:
     0. Basic style rules for overall element structure etc
-    1. Style rules content section 1
-    2. Style rules content section 2
-    3. Style rules content section 3
-
-
-    For reference:
-    Color palette = #00171F #53DD6C #6A706E #FFFFFF (outdated)
+    1. Style rules for content section 1 (and its children)
+    2. Style rules for content section 2
+    3. Style rules for content section 3
+    4. Style rules for the conclusions section
+    5. Style rules for the footer
 */
 
 /* 0. Basic Style rules for some components */
@@ -42,7 +41,7 @@ div.content-section-banner > h1 {
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
 }
 
-/* ---------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
 
 /* 1. Section 1 - What is Zero Hunger? */
 /* Style the content banner */
@@ -183,6 +182,11 @@ div#content1-card-3 > div.multi-column-container div > h1 {
     font-size: 3.5vw;
 }
 
+div#content1-card-3 img {
+    width: 10vw;
+    align-self: center;
+}
+
 div#content1-card-3 > h1:last-child {
     width: fit-content;
     padding: 20px;
@@ -192,15 +196,17 @@ div#content1-card-3 > h1:last-child {
     font-size: 5vw;
 }
 
-/* ------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
 
-/* Section 2 */
+/* 2. Section 2 - Factors of World Hunger */
+/* Style the content banner */
 section#content-2 > div.content-section-banner {
     background-image: url(/Assets/Images/starving-pair.webp); /* Credit to Concern US at https://concernusa.org/news/causes-of-world-hunger/ */
     background-size: cover;
     background-attachment: fixed;
 }
 
+/* Configure the image */
 section#content-2 > figure.inline-image {
     grid-row: 3 / span 2;
     grid-column: 1 / span 3;
@@ -211,6 +217,7 @@ section#content-2 > figure.inline-image {
     justify-content: center;
 }
 
+/* Resizing image */
 section#content-2 > figure.inline-image > img {
     width: 100%;
     height: auto;
@@ -221,7 +228,6 @@ section#content-2 > figure.inline-image > img {
     margin: auto;
 }
 
-/* Styling content2-card-1 */
 div#content2-card-1 {
     grid-row: 3 / span 1;
     grid-column: 4 / span 3;
@@ -350,6 +356,7 @@ div#content2-card-5 {
     margin-bottom: 10%;
 }
 
+/* Reposition the container */
 div#content2-card-5 > div.hover-popout-container {
     margin-top: -25%;
     margin-right: -8%;
@@ -548,7 +555,7 @@ div#content3-card-4 > a {
     text-align: center;
     width: fit-content;
     align-self: center;
-    padding: 1.5vh 4vw;
+    padding: 1.5vh 3.5vw;
     text-decoration: none;
 }
 
@@ -572,8 +579,79 @@ div#content3-card-6 {
     color: #f9f9f9;
 }
 
+section#conclusion-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120vh;
+
+    color: #6A706E;
+}
+
+div#conclusion-card {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    width: 80%;
+    text-align: center;
+    text-shadow: none;
+}
+
+div#conclusion-card > h1 {
+    text-align: center;
+    vertical-align: middle;
+    padding: 2%;
+    color: #6A706E;
+}
+
+section#conclusion-section > h1 {
+    width: 50%;
+    text-align: center;
+}
+
+section#conclusion-section > h1 > strong {
+    color: red;
+}
 
 
+/* 4. The Footer */
+footer#content-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #44444D;
+    color: #f9f9f9;
+
+    height: 50vh;
+}
+
+footer#content-footer div.title-container {
+    margin-left: 1vw;
+}
+
+div.title-container > img {
+    width: 5vw;
+    height: 10vh;
+    border-radius: 10%;
+
+    margin-bottom: 2vh;
+}
+
+div#donation-links-container {
+    height: 20vh;
+}
+
+div#webpages-links-container {
+    height: 15vh;
+}
+
+footer#content-footer > p {
+    font-size: 1vw;
+    margin: auto;
+    margin-bottom: 2.5vh;
+    margin-top: 5vh;
+}
 
 
 

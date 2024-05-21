@@ -117,8 +117,9 @@ section.snap-scroll-section {
 section.grid-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0px 40vh auto auto auto auto auto 200px;
+    grid-template-rows: 0px 40vh auto auto auto auto auto ;
     /* Layout: buffer, banner, text, text, text buffer */
+    margin-bottom: 20vh;
 }
 
 section.grid-content h1 {
