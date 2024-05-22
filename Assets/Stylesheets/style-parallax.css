@@ -1,8 +1,10 @@
-/*  The contents of this stylesheet influences the elements in charge of
-    the parallax effect, as well as their children. */
+/*  
+    The contents of this stylesheet influences the elements in charge of
+    the parallax effect, as well as their children. 
+    
+*/
 
-    /* The following covers the style rules of the id=parallax-1 element. */
-
+/* The following covers the style rules of the id=parallax-1 element. */
 div#parallax-1 {
     display: flex;
     flex-direction: column;
@@ -74,8 +76,7 @@ div#parallax-1 > div.title-box > h1 {
     text-shadow: 0px 2px 30px rgba(255, 255, 255, 0.6);
 }
 
-/*  The following style rules will be applied to id=parallax-2 element
-    and its children. */
+/*  The following style rules will be applied to id=parallax-2 element and its children. */
 div#parallax-2 {
     display: flex;
     background: linear-gradient(180deg, rgba(17, 17, 17, 0.3) 0%, rgba(42, 39, 46, 0.4) 70%, rgba(42,15,84,1) 100%) scroll no-repeat,
@@ -122,6 +123,7 @@ div#parallax-2 > div.title-box > h1 + p {
     text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
 }
 
+/*  The following style rules will be applied to id=parallax-3 element and its children. */
 div#parallax-3 {
     display: flex;
     flex-direction: column;

@@ -8,7 +8,8 @@
     2. Style rules for content section 2
     3. Style rules for content section 3
     4. Style rules for the conclusions section
-    5. Style rules for the footer
+    5. Style rules for the reflections section
+    6. Style rules for the footer
 */
 
 /* 0. Basic Style rules for some components */
@@ -587,6 +588,10 @@ div#content3-card-6 {
     color: #f9f9f9;
 }
 
+/* --------------------------------------------------------------------------------------------------- */
+
+/* 5. Conclusion Section */
+/* Style the conclusion section */
 section#conclusion-section {
     display: flex;
     flex-direction: column;
@@ -619,6 +624,9 @@ section#conclusion-section > h1 {
 section#conclusion-section > h1 > strong {
     color: red;
 }
+
+/* --------------------------------------------------------------------------------------------------- */
+/* 6. Reflection Section */
 
 /*
     This section is meant to be a call to action for the reader.

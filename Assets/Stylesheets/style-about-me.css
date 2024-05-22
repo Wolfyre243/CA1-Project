@@ -1,11 +1,13 @@
 /* This stylesheet is made for the about-me sub-page of index.html */
 /* 
-Contents:
-1. The hero section and the main box
-2. The content section and the carousell
-
+    Contents:
+    1. The hero section and the main box
+    2. The hobbies and interests section
+    3. The personality traits section
+    4. Footer section
 */
 
+/* General style rules for layout */
 html, body, div.carousell-layout, section {
     /* Ensures that the selected elements take up the full page */
     width: 100%;
@@ -22,6 +24,8 @@ body {
     background-color: rgb(22, 22, 22);
 }
 
+/* --------------------------------------------------------------------------------------------------- */
+/* 1. The Hero Section */
 /* Styles the heading for the left side of the title box */
 div#header-box{
     display: flex;
@@ -127,6 +131,8 @@ div#title-box-right > div.scroll-prompt {
     animation: floating-element 3s ease-in-out infinite;
 }
 
+/* --------------------------------------------------------------------------------------------------- */
+/* 2. The Hobbies and Interests Section */
 section#hobby-section {
     justify-content: flex-start;
     flex-direction: column;
@@ -161,6 +167,7 @@ section#hobby-section > h1 {
     text-align: center;
 }
 
+/* Create a gallery layout similar to a carousell */
 section#hobby-section > div.carousell-layout {
     display: grid;
     grid: 1fr / 30vw 1fr 1fr 1fr 1fr 30vw;
@@ -229,6 +236,7 @@ section#content-hobbies-2 a {
     text-decoration: underline dotted 2px;
 }
 
+/* Create a container to hold the languages I have learnt so far */
 div#language-bar {
     display: flex;
     flex-direction: row;
@@ -248,6 +256,8 @@ section#content-interests-2 img {
     width: 5vw;
 }
 
+/* --------------------------------------------------------------------------------------------------- */
+/* 3. The Personality Traits Section */
 section#personality-section {
     justify-content: flex-start;
     flex-direction: row;
@@ -320,6 +330,9 @@ div#personality-card img {
     margin: auto;
     margin-right: 2vw;
 }
+
+/* --------------------------------------------------------------------------------------------------- */
+/* 4. The footer section */
 
 footer#footer-section {
     display: flex;

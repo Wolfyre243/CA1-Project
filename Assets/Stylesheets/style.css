@@ -1,12 +1,10 @@
 /*  The style rules here should be reusable across all elements.
     This stylesheet is the main stylesheet of the entire webpage. */
 
-/* 
-    Contents:
-    1. Basic Formats for common elements
-    2. Specific formats for specialised components like cards for content
-*/
+/* The contents of this stylesheet are created such that any of the 3 webpages can reuse them. */
 
+
+/* Resizes the h1 element to make it bigger for banners */
 h1.banner-text {
     color: aliceblue;
 
@@ -101,6 +99,7 @@ img.down-arrow {
 blockquote {
     position: relative;
 }
+
 /* These 2 styles create a quotation mark effect on the blockquote element. */
 blockquote > h1::before {
     color: white;
@@ -239,6 +238,30 @@ a.small-button-link:hover {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
 }
 
+/* Style the footer section */
+footer.content-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #44444D;
+    color: #f9f9f9;
+
+    height: 50vh;
+}
+
+footer.content-footer div.title-container {
+    margin-left: 1vw;
+}
+
+footer.content-footer > p {
+    font-size: 1vw;
+    margin: auto;
+    margin-bottom: 2.5vh;
+    margin-top: 5vh;
+}
+
 div.footer-container {
     display: flex;
     flex-direction: row;
@@ -263,6 +286,7 @@ div.footer-container h1 {
     font-size: 2vw;
 }
 
+/* Style the title-container inside the footer */
 div.title-container > h1 {
     font-size: 5vw;
 }
@@ -275,29 +299,6 @@ div.donation-links-container > a, div.webpages-links-container > a {
     margin: 1vh 0.5vw;
     margin-left: 0;
     font-size: 1.2vw;
-}
-
-footer.content-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #44444D;
-    color: #f9f9f9;
-
-    height: 50vh;
-}
-
-footer.content-footer div.title-container {
-    margin-left: 1vw;
-}
-
-footer.content-footer > p {
-    font-size: 1vw;
-    margin: auto;
-    margin-bottom: 2.5vh;
-    margin-top: 5vh;
 }
 
 div.title-container > img {

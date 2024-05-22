@@ -121,14 +121,6 @@ section.grid-content {
     margin-bottom: 20vh;
 }
 
-section.grid-content h1 {
-    font-family: "Bebas Neue";
-}
-
-section.grid-content p {
-    font-family: "Roboto Condensed";
-}
-
 div.content-section-banner {
     display: flex;
     flex-direction: column;
