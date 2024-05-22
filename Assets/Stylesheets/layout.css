@@ -74,8 +74,7 @@ header#sticky-banner img#small-logo {
 /* Animate the logo to rotate and expand on hover */
 header#sticky-banner img#small-logo:hover {
     padding: 10px;
-    transform: scale(1.2, 1.2);
-    rotate: 360deg;
+    transform: scale(1.2, 1.2) rotate(360deg);
     border-radius: 20px;
 }
 
@@ -148,7 +147,5 @@ section.grid-content  a {
 }
 
 
-
-/* Creates a figure that holds an image and a caption. Position is adjusted in respective css files. */
 
 

@@ -35,11 +35,11 @@ All Icons are taken from Flaticon, courtesy of Freepik. Available at https://www
 "WWF-logo.png" taken from https://1000logos.net/wwf-logo/
 "veronica-THP.jpg" taken from https://thp.org/stories/veronica/
 
-"food-from-the-heart-A" taken from https://www.aasingapore.com/events-1/volunteer-aas-at-food-from-the-heart
-
 My Pledge Images
 "smiling-children-with-porridge" taken from https://www.wglt.org/show/wglts-sound-ideas/2016-05-02/students-launch-website-to-feed-starving-children
 "check-expiry" taken from https://tulsaer.com/do-food-expiration-dates-really-matter/
+"food-from-the-heart.webp" taken from https://www.aasingapore.com/events-1/volunteer-aas-at-food-from-the-heart
+"sg-local-produce-logo" taken from https://www.sfa.gov.sg/food-farming/sgfoodstory/supporting-local-produce
 
 About Me Images
 "asus-tuf-4090" taken from https://www.asus.com/me-en/motherboards-components/graphics-cards/tuf-gaming/tuf-rtx4090-24g-gaming/

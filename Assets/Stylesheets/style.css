@@ -128,6 +128,7 @@ a.logo-name-link {
     justify-content: center;
 }
 
+/* Creates a figure that holds an image and a caption. Position is adjusted in respective css files. */
 figure.inline-image {
     align-self: center;
     margin: auto;
@@ -149,6 +150,10 @@ div.content-card {
 
     box-shadow: 0px 10px 40px rgba(66, 66, 66, 0.6);
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+a[target="_blank"] {
+    text-decoration: underline solid 2px;
 }
 
 a.link-hover-fx:hover {
@@ -204,6 +209,8 @@ div.hover-popout-container > p {
     opacity: 0;
     border-radius: 5px;
     padding: 10px;
+
+    background-color: #44444D;
     transition: all 0.2s ease-in-out;
 }
 
@@ -268,4 +275,35 @@ div.donation-links-container > a, div.webpages-links-container > a {
     margin: 1vh 0.5vw;
     margin-left: 0;
     font-size: 1.2vw;
+}
+
+footer.content-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #44444D;
+    color: #f9f9f9;
+
+    height: 50vh;
+}
+
+footer.content-footer div.title-container {
+    margin-left: 1vw;
+}
+
+footer.content-footer > p {
+    font-size: 1vw;
+    margin: auto;
+    margin-bottom: 2.5vh;
+    margin-top: 5vh;
+}
+
+div.title-container > img {
+    width: 5vw;
+    height: 10vh;
+    border-radius: 10%;
+
+    margin-bottom: 2vh;
 }

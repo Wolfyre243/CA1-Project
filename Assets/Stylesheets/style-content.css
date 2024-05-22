@@ -309,7 +309,7 @@ div#content2-card-3 > div.hover-popout-container > img {
 }
 
 /* Style the paragraph of text inside the content card */
-div#content2-card-3-textbox {
+div#content2-card-3-textbox, div#content2-card-5-textbox {
     align-self: baseline;
     margin: 3%;
 }
@@ -591,9 +591,10 @@ section#conclusion-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 120vh;
+    height: 100vh;
 
-    color: #6A706E;
+    color: black;
+    background: linear-gradient(180deg, rgba(249,249,249,0) 0%, rgba(0,0,0,1) 100%);
 }
 
 div#conclusion-card {
@@ -608,7 +609,6 @@ div#conclusion-card > h1 {
     text-align: center;
     vertical-align: middle;
     padding: 2%;
-    color: #6A706E;
 }
 
 section#conclusion-section > h1 {
@@ -620,46 +620,30 @@ section#conclusion-section > h1 > strong {
     color: red;
 }
 
-
-/* 4. The Footer */
-footer#content-footer {
+/*
+    This section is meant to be a call to action for the reader.
+    The black screen shows a reflection of the reader, which can amplify
+    the efects of this call to action.
+*/
+section#reflection-section {
+    background-color: black; /* Creates a black mirror effect */
+    height: 110vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    background-color: #44444D;
-    color: #f9f9f9;
-
-    height: 50vh;
 }
 
-footer#content-footer div.title-container {
-    margin-left: 1vw;
-}
-
-div.title-container > img {
-    width: 5vw;
-    height: 10vh;
-    border-radius: 10%;
-
-    margin-bottom: 2vh;
-}
-
-div#donation-links-container {
-    height: 20vh;
-}
-
-div#webpages-links-container {
-    height: 15vh;
-}
-
-footer#content-footer > p {
-    font-size: 1vw;
+div#reflect-card {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    width: 80%;
+    text-align: center;
+    text-shadow: none;
     margin: auto;
-    margin-bottom: 2.5vh;
-    margin-top: 5vh;
+    color: #f9f9f9;
 }
+
+
 
 
 
