@@ -9,16 +9,42 @@ Contents:
 
 Image references
 
-Icons are taken from Flaticon, courtesy of Freepik. Available at https://www.flaticon.com/ and https://www.freepik.com/ respectively.
+All Icons are taken from Flaticon, courtesy of Freepik. Available at https://www.flaticon.com/ and https://www.freepik.com/ respectively.
 
+"hungry-hands.jpg" taken from https://www.istockphoto.com/photo/poor-indian-children-asking-for-food-india-gm524903696-92295869
+"children-asking-for-food.jpg" taken from https://www.independent.co.uk/news/world/the-20-countries-where-more-than-1-in-4-people-go-hungry-a47886.html
+
+01 What is World Hunger?
+"hungry-children-lined-up.jpeg" taken from https://leadership.ng/images-of-starving-children-in-gaza-grip-the-world/
+"smiling-child-with-food.jpg" taken from https://www.fmsc.org/the-feed/from-the-field/2020/needcontinues
 "1in10-people-icon.png" taken from https://www.health.pa.gov/topics/programs/Pages/Health-Literacy.aspx
+
+02 Factors of World Hunger
+"starving-pair.webp" taken from https://concernusa.org/news/causes-of-world-hunger/
+"hungry-family-of-6.avif" taken from https://www.economist.com/leaders/2021/09/04/why-madagascar-is-going-hungry
 "flooded-area" taken from https://www.greenpeace.org/africa/en/blogs/50468/extreme-weather-is-taking-its-toll-on-africa/
 "conflict-and-hunger" taken from https://www.csis.org/analysis/dangerously-hungry-link-between-food-insecurity-and-conflict
 "boy-in-village" taken from https://www.actionagainsthunger.org/the-hunger-crisis/the-causes-of-hunger/inequity/
+
+03 Acheiving Zero Hunger
+"children-eating-happy.jpg" taken from https://thedominicsfoundation.com.ng/
+"WFP-image.webp" taken from https://www.wfpusa.org/articles/countries-most-affected-by-climate-change/
+"WWF-sustainable-food.jpg" taken from https://www.wglt.org/show/wglts-sound-ideas/2016-05-02/students-launch-website-to-feed-starving-children
+"the-hunger-proj-img.jpg" taken from https://thp.org/
+"WFP-conflict-aftermath.webp" taken from https://www.wfpusa.org/impact/
+"WWF-logo.png" taken from https://1000logos.net/wwf-logo/
+"veronica-THP.jpg" taken from https://thp.org/stories/veronica/
+
 "food-from-the-heart-A" taken from https://www.aasingapore.com/events-1/volunteer-aas-at-food-from-the-heart
 
-"asus-tuf-4090" taken from https://www.asus.com/me-en/motherboards-components/graphics-cards/tuf-gaming/tuf-rtx4090-24g-gaming/
+My Pledge Images
+"smiling-children-with-porridge" taken from https://www.wglt.org/show/wglts-sound-ideas/2016-05-02/students-launch-website-to-feed-starving-children
+"check-expiry" taken from https://tulsaer.com/do-food-expiration-dates-really-matter/
 
+About Me Images
+"asus-tuf-4090" taken from https://www.asus.com/me-en/motherboards-components/graphics-cards/tuf-gaming/tuf-rtx4090-24g-gaming/
+"akko-cream-yellow" taken from https://akkogear.eu/products/v3-cream-yellow-pro-switch-45pcs
+"INFJ-T-image" taken from https://www.16personalities.com/personality-types
 "slimee-chess-render" and "futuristic-podium" are both 3D renders made by me.
 ----------------------------------------------------------------
 

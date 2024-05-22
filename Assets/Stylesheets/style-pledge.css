@@ -1,7 +1,14 @@
 /* This stylesheet contains style rules for the my-pledge.html page. */
-html, body, section {
-    width: 100%;
-    height: 100%;
+html, body {
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+div.scroll-snap-container {
+    margin-top: auto;
+    height: 90%;
 }
 
 div.scroll-snap-container > section {
@@ -9,19 +16,30 @@ div.scroll-snap-container > section {
     flex-direction: column;
     justify-content: left;
     align-items: left;
+    scroll-snap-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.snap-scroll-section > h1 {
+    margin: 1vh 1vw;
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 5vw;
+
+    color: #6A706E;
 }
 
 section#intro-section {
     background: linear-gradient(170deg, rgba(27, 27, 27, 0.411) 0%, rgba(0, 0, 0, 0.562) 100%),
-                url(/Assets/Images/smiling-children-with-porridge.jpg) no-repeat; /* Credit to WGLT.org at https://www.wglt.org/show/wglts-sound-ideas/2016-05-02/students-launch-website-to-feed-starving-children */
+                url(/Assets/Images/pledge-images/smiling-children-with-porridge.jpg) no-repeat; /* Credit to WGLT.org at https://www.wglt.org/show/wglts-sound-ideas/2016-05-02/students-launch-website-to-feed-starving-children */
                 
     background-size: cover;
     background-attachment: fixed;
 }
 
 section#intro-section > h1 {
-    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
-    font-size: 9rem;
+    font-size: 10vw;
 
     width: fit-content;
     margin-top: 10%;
@@ -30,7 +48,7 @@ section#intro-section > h1 {
     color: aliceblue;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.788);
 
-    border-bottom: 10px solid rgb(255, 255, 255);
+    border-bottom: 0.5vh solid rgb(255, 255, 255);
 }
 
 section#intro-section > p {
@@ -39,8 +57,77 @@ section#intro-section > p {
     margin-top: 2%;
     margin-left: 5%;
 
-    font: 3rem 'Noto Sans', Arial, Helvetica, sans-serif;
+    font-size: 3vw;
     font-weight: 600;
     color: aliceblue;
     text-shadow: 0px 0px 30px rgb(0, 0, 0);
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* Goal 1: Reduce Food Waste */
+section#goal-1 > h1 {
+    margin: 1vh 1vw;
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 5vw;
+
+    color: #6A706E;
+}
+
+section#goal-1 div.content-card {
+    background-color: #6A706E;
+    color: #f9f9f9;
+
+    width: 60%;
+}
+
+section#goal-1 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section#goal-1 figure.inline-image {
+    margin: auto;
+    margin-left: 1vw;
+}
+
+section#goal-1 img {
+    width: 20vw;
+    border-radius: 10px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* Goal 2: Donation Drives */
+
+section#goal-2 div.image-desc-card {
+    background-color: #6A706E;
+    color: #f9f9f9;
+
+    height: 40vh;
+}
+
+section#goal-2 div.image-desc-card div.hover-popout-container {
+    width: 50vw;
+    margin-left: -2.5vw;
+    margin-bottom: 10vh;
+}
+
+div.hover-popout-container p {
+    background-color: #44444D;
+    font-size: 1.2vw;
+}
+
+section#goal-2 img {
+    width: 25vw;
+    border-radius: 10px;
+    margin: auto;
+}
+
+div#goal-2-textbox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 5vw;
 }

@@ -94,9 +94,9 @@ header#sticky-banner > ul > li:hover {
 div.scroll-snap-container {
     /* Allows for scroll snapping; proximity causes the scroll to 
     snap less stricly and allows for more scrolling space */
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    overflow: auto;
+    overflow: scroll;
     scroll-snap-type: y proximity; 
 
     scrollbar-width: none; /* hides the scrollbar */

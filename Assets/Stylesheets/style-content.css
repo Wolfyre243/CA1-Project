@@ -47,7 +47,8 @@ div.content-section-banner > h1 {
 /* Style the content banner */
 section#content-1 > div.content-section-banner {
     background: linear-gradient(170deg, rgba(146, 146, 146, 0.253) 0%, rgba(0, 0, 0, 0.37) 100%) fixed no-repeat,
-                url(/Assets/Images/hungry-children-lined-up.jpeg) fixed no-repeat top -20vh center; /* Credit to Leadership at https://leadership.ng/images-of-starving-children-in-gaza-grip-the-world/ */
+                url(/Assets/Images/hungry-children-lined-up.jpeg) fixed no-repeat top -20vh center; 
+                /* Credit to Leadership at https://leadership.ng/images-of-starving-children-in-gaza-grip-the-world/ */
     background-size: cover;
 }
 
@@ -201,7 +202,7 @@ div#content1-card-3 > h1:last-child {
 /* 2. Section 2 - Factors of World Hunger */
 /* Style the content banner */
 section#content-2 > div.content-section-banner {
-    background-image: url(/Assets/Images/starving-pair.webp); /* Credit to Concern US at https://concernusa.org/news/causes-of-world-hunger/ */
+    background-image: url(/Assets/Images/causes-images/starving-pair.webp); /* Credit to Concern US at https://concernusa.org/news/causes-of-world-hunger/ */
     background-size: cover;
     background-attachment: fixed;
 }
@@ -384,9 +385,12 @@ div#content2-card-6 {
     text-shadow: none;
 }
 
-/* Section 3 */
+/* --------------------------------------------------------------------------------------------------- */
+
+/* 3. Section 3 - Achieving Zero Hunger */
+/* Style the content banner */
 section#content-3 > div.content-section-banner {
-    background: url(/Assets/Images/children-eating-happy.jpg) fixed no-repeat;
+    background: url(/Assets/Images/solution-images/children-eating-happy.jpg) fixed no-repeat; /* Taken from https://thedominicsfoundation.com.ng/ */
     background-size: cover;
     background-position: 50% center;
 }
@@ -436,6 +440,7 @@ section#content-3 > div#solution-triangle {
     align-items: center;
 }
 
+/* Style the nodes inside the solution triangle */
 div.solution-nodes {
     display: flex;
     flex-direction: column;
@@ -451,16 +456,19 @@ div.solution-nodes {
     transition: all 0.3s ease-in-out;
 }
 
+/* Makes the nodes expand when hovered on */
 div.solution-nodes:hover {
     transform: scale(1.5, 1.5);
 }
 
+/* Style the text in the nodes; hide it initially */
 div.solution-nodes h1 {
     width: 100%;
     opacity: 0;
     transition: all 0.3s ease-in-out;
 }
 
+/* Fade in the text on hover */
 div.solution-nodes:hover h1 {
     color: #f9f9f9;
     opacity: 1;
@@ -481,7 +489,7 @@ div#solution-triangle div#node-1 {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
 
-    background: url(/Assets/Images/WFP-image.webp) no-repeat;
+    background: url(/Assets/Images/solution-images/WFP-image.webp) no-repeat; /* Taken from https://www.wfpusa.org/articles/countries-most-affected-by-climate-change/ */
     background-size: cover;
 }
 
@@ -489,7 +497,7 @@ div#solution-triangle div#node-2 {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
     
-    background: url(/Assets/Images/WWF-sustainable-food.jpg) no-repeat center center; /* Image taken from WWF at https://www.worldwildlife.org/initiatives/food */
+    background: url(/Assets/Images/solution-images/WWF-sustainable-food.jpg) no-repeat center center; /* Image taken from WWF at https://www.worldwildlife.org/initiatives/food */
     background-size: cover;
 }
 
@@ -497,7 +505,7 @@ div#solution-triangle div#node-2 {
 div#solution-triangle div#node-3 {
     grid-column: 3 / span 1;
     grid-row: 3 / span 1;
-    background: url(/Assets/Images/the-hunger-proj-img.jpg) no-repeat;
+    background: url(/Assets/Images/solution-images/the-hunger-proj-img.jpg) no-repeat; /* Taken from https://thp.org/ */
     background-size: cover;
 }
 

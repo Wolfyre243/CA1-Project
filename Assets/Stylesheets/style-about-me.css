@@ -67,9 +67,10 @@ div#title-box-left > div#header-box > img {
     object-position: -5vw;
 
     box-shadow: 2px 2px 20px rgba(91, 91, 91, 0.8);
-    
+    margin: 0.5vh 0.5vw;
+
     width: 8vw;
-    height: 16vh;
+    height: 15.5vh;
 }
 /* Style the paragraph of text below the heading */
 div#title-box-left > p {
@@ -290,14 +291,14 @@ div#values-card > h1 {
     opacity: 1;
     vertical-align: middle;
 
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 div#values-card > div > p {
     opacity: 0;
     font-size: 0.01vw;
 
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 div#values-card > div:hover > p {
